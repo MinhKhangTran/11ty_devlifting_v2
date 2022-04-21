@@ -99,18 +99,31 @@ collections:
                 widget: "list"
                 fields:
                   - {name: "bulletpoint", label: "bulletpoint", widget: "string" }
+      - name: "socials"
+        label: "socials"
+        file: "src/_data/socials.json"
+        fields:
+          - { label: "dummy", name: "dummy", widget: hidden }
+          - name: "social"
+            label: "social"
+            widget: "list"
+            fields:
+              - { name: "social_text", label: "social Text", widget: "string" }
+              - { name: "social_name", label: "social name", widget: "string" }
+              - { name: "social_job", label: "social job", widget: "string" }
+              - { name: "social_img", label: "social image", widget: "string" }
   - name: "projekte"
     label: "Projekte"
     folder: "src/projekte"
     create: true
     slug: "{{slug}}"
     fields:
-      - { label: "Card Heading", name: "card_heading", widget: "string" }
-      - { label: "Card Subheading", name: "card_sub", widget: "string" }
-      - { label: "Card Description", name: "card_desc", widget: "string" }
+      - { label: "Title", name: "title", widget: "string" }
+      - { label: "Description", name: "description", widget: "string" }
+      - { label: "Date", name: "date", widget: "datetime" }
       - {
-          label: "Card Image",
-          name: "card_img",
+          label: "Image",
+          name: "img",
           widget: "image",
           required: true,
         }
