@@ -12,13 +12,13 @@ collections:
         label: "Info"
         file: "src/_data/info.json"
         fields:
-          - { label: "name", name: "Name", widget: string }
-          - { label: "email", name: "E-Mail", widget: string }
+          - { label: "name", name: "name", widget: string }
+          - { label: "email", name: "email", widget: string }
       - name: "navbar"
         label: "Navbar"
         file: "src/_data/navbar.json"
         fields:
-          - { label: "brand", name: "Brand", widget: string }
+          - { label: "brand", name: "brand", widget: string }
           - {
               label: "Logo",
               name: "logo",
@@ -30,8 +30,8 @@ collections:
             label: "navigations"
             widget: "list"
             fields:
-              - { name: "Url", label: "url", widget: "string" }
-              - { name: "Navigation", label: "navigation", widget: "string" }
+              - { name: "url", label: "url", widget: "string" }
+              - { name: "navigation", label: "navigation", widget: "string" }
       - name: "footer"
         label: "footer"
         file: "src/_data/footer.json"
@@ -43,26 +43,26 @@ collections:
               required: false,
               hint: "If not specified, Brand will be used as a text link",
             }
-          - { name: "subheading", label: "Subheading", widget: "string" }
+          - { name: "subheading", label: "subheading", widget: "string" }
           - { name: "copyright", label: "copyright", widget: "string" }
           - name: "navigations"
             label: "navigations"
             widget: "list"
             fields:
-              - { name: "Url", label: "url", widget: "string" }
-              - { name: "Navigation", label: "navigation", widget: "string" }
+              - { name: "url", label: "url", widget: "string" }
+              - { name: "navigation", label: "navigation", widget: "string" }
           - name: "recht"
             label: "recht"
             widget: "list"
             fields:
-              - { name: "Url", label: "url", widget: "string" }
-              - { name: "Navigation", label: "navigation", widget: "string" }
+              - { name: "url", label: "url", widget: "string" }
+              - { name: "navigation", label: "navigation", widget: "string" }
           - name: "socials"
             label: "socials"
             widget: "list"
             fields:
-              - { name: "Url", label: "url", widget: "string" }
-              - { name: "Navigation", label: "navigation", widget: "string" }
+              - { name: "url", label: "url", widget: "string" }
+              - { name: "navigation", label: "navigation", widget: "string" }
   - name: "projekte"
     label: "Projekte"
     folder: "src/projekte"
