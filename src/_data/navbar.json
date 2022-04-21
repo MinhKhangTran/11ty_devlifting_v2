@@ -1,0 +1,17 @@
+{
+  "Brand": "Devlifting",
+  "navigations": [
+    {
+      "Url": "/projekte",
+      "Navigation": "projekte"
+    },
+    {
+      "Url": "/blog",
+      "Navigation": "blog"
+    },
+    {
+      "Url": "/kontakt",
+      "Navigation": "kontakt"
+    }
+  ]
+}
