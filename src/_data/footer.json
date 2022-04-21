@@ -1,0 +1,42 @@
+{
+  "subheading": "not hoomaan master of i, oooh damn dat dog. Hate dog plop down",
+  "copyright": "Devlifting",
+  "navigations": [
+    {
+      "url": "/",
+      "navigation": "home"
+    },
+    {
+      "url": "/projekte/",
+      "navigation": "projekte"
+    },
+    {
+      "navigation": "blog",
+      "url": "/blog/"
+    },
+    {
+      "url": "/kontakt/",
+      "navigation": "kontakt"
+    }
+  ],
+  "recht": [
+    {
+      "url": "/impressum/",
+      "navigation": "impressum"
+    },
+    {
+      "url": "/dsgvo/",
+      "navigation": "dsgvo"
+    }
+  ],
+  "socials": [
+    {
+      "url": "https://github.com/MinhKhangTran",
+      "navigation": "github"
+    },
+    {
+      "url": "https://twitter.com/devLifting_",
+      "navigation": "twitter"
+    }
+  ]
+}
