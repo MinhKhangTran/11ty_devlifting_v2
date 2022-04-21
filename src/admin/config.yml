@@ -74,6 +74,7 @@ collections:
         label: "benefits"
         file: "src/_data/benefits.json"
         fields:
+          - { label: "dummy", name: "dummy", widget: hidden }
           name: "benefit"
           label: "benefit"
           widget: "list"
