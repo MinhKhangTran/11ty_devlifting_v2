@@ -70,13 +70,17 @@ collections:
           - { label: "Hero Heading", name: "hero_heading", widget: "string" }
           - { label: "Hero Subheading", name: "hero_sub", widget: "string" }
           - { label: "Hero Button", name: "hero_btn", widget: "string" }
-          - name: "benefits"
-            label: "benefits"
-            widget: "list"
-            fields:
-              - { name: "icon", label: "icon", widget: "string" }
-              - { name: "benefit_title", label: "Benefit Title", widget: "string" }
-              - { name: "benefit_text", label: "Benefit Text", widget: "string" }
+      - name: "benefits"
+        label: "benefits"
+        file: "src/_data/benefits.json"
+        fields:
+          name: "benefit"
+          label: "benefit"
+          widget: "list"
+          fields:
+            - { name: "icon", label: "icon", widget: "string" }
+            - { name: "benefit_title", label: "Benefit Title", widget: "string" }
+            - { name: "benefit_text", label: "Benefit Text", widget: "string" }
   - name: "projekte"
     label: "Projekte"
     folder: "src/projekte"
