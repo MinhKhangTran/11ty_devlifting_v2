@@ -1,0 +1,19 @@
+{
+  "benefit": [
+    {
+      "icon": "fast",
+      "benefit_title": "schnell",
+      "benefit_text": "Using the latest technology to generate fast static websites. Other nice features are security and scalability "
+    },
+    {
+      "icon": "accessible",
+      "benefit_title": "zugänglich",
+      "benefit_text": "Websites should be accessible for everyone by default. I use the WCAG (Web Content Accessibility Guideline) to design and create my websites."
+    },
+    {
+      "icon": "safe",
+      "benefit_title": "sicher",
+      "benefit_text": "With the help of Content Management Systems (CMS) you can easily maintain and update your content."
+    }
+  ]
+}
