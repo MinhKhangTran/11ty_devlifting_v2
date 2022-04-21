@@ -110,7 +110,6 @@ collections:
           - { label: "Hero Heading", name: "hero_heading", widget: "string" }
           - { label: "Hero Subheading", name: "hero_sub", widget: "string" }
           - { label: "Hero Button", name: "hero_btn", widget: "string" }
-          - { label: "Hero Button", name: "hero_btn", widget: "string" }
           - name: "benefits"
             label: "benefits"
             widget: "list"
