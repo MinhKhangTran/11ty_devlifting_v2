@@ -1,0 +1,54 @@
+// load fonts
+@import url("https://fonts.googleapis.com/css2?family=Lato:wght@700&family=Poppins&display=swap");
+
+// Bootstrap functions
+@import "../../node_modules/bootstrap/scss/functions";
+
+// colors
+$primary: #a97155;
+$secondary: #e79f79;
+$light: #fff7f2;
+$dark: #402e32;
+// fonts
+$font-family-base: "Poppins", -apple-system, BlinkMacSystemFont, "Segoe UI",
+  Roboto, "Helvetica Neue", Arial, sans-serif, "Apple Color Emoji",
+  "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
+
+$headings-font-family: "Lato", -apple-system, BlinkMacSystemFont, "Segoe UI",
+  Roboto, "Helvetica Neue", Arial, sans-serif, "Apple Color Emoji",
+  "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
+
+//navbar
+
+// import variables and mixins files (so you can use them below)
+// any redefined vars above will be incorporated into the files (e.g. in maps)
+@import "../../node_modules/bootstrap/scss/variables";
+@import "../../node_modules/bootstrap/scss/mixins";
+
+// Import variables
+@import "variables";
+
+// import bootstrap whole sass lib
+@import "../../node_modules/bootstrap/scss/bootstrap";
+
+// import a11y and global
+@import "breakpoints";
+@import "a11y";
+@import "global";
+@import "typography";
+
+// components
+@import "components/navbar";
+@import "components/hero";
+@import "components/button";
+@import "components/scrollbar";
+@import "components/feat";
+@import "components/featuredWork";
+@import "components/project-item";
+@import "components/about";
+@import "components/cta";
+@import "components/footer";
+@import "components/project-list";
+@import "components/projekte";
+@import "components/kontakt";
+@import "components/404";

@@ -1,0 +1,51 @@
+@use "sass:math";
+.heading-1 {
+  font-size: math.div(36rem, 16);
+  font-weight: 700;
+  @include md {
+    font-size: math.div(72rem, 16);
+  }
+}
+.heading-2 {
+  font-size: math.div(24rem, 16);
+  font-weight: 700;
+  @include md {
+    font-size: math.div(36rem, 16);
+  }
+}
+.heading-3 {
+  font-size: math.div(20rem, 16);
+  font-weight: 700;
+  @include md {
+    font-size: math.div(24rem, 16);
+  }
+}
+.social-heading {
+  font-size: math.div(16rem, 16);
+  font-weight: 700;
+  @include md {
+    font-size: math.div(18rem, 16);
+  }
+}
+.project-heading {
+  font-size: math.div(20rem, 16);
+  font-weight: 700;
+  @include md {
+    font-size: math.div(24rem, 16);
+  }
+}
+.cta-heading {
+  font-size: math.div(32rem, 16);
+  font-weight: 700;
+  @include md {
+    font-size: math.div(48rem, 16);
+  }
+}
+.body-lg {
+  font-size: math.div(18rem, 16);
+  line-height: 150%;
+}
+.body-sm {
+  font-size: math.div(16rem, 16);
+  line-height: 150%;
+}

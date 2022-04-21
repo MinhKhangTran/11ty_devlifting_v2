@@ -1,0 +1,22 @@
+.btn-main {
+  color: #40160b;
+  background-color: #fafafa;
+  border-color: #fafafa;
+}
+.btn-main:hover {
+  color: #40160b;
+  background-color: #e5e5e5;
+  border-color: #e5e5e5;
+}
+.btn-main:focus-within {
+  background-color: #d5d5d5;
+  border-color: #d5d5d5;
+  outline: solid 1px white;
+}
+
+.btn-main:disabled,
+.btn-main.disabled {
+  color: #40160b;
+  background-color: #fafafa;
+  border-color: #fafafa;
+}
