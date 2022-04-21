@@ -3,15 +3,22 @@
   "navigations": [
     {
       "Url": "/projekte",
-      "Navigation": "projekte"
+      "Navigation": "projekte",
+      "url": "/projekte/",
+      "navigation": "projekte"
     },
     {
       "Url": "/blog",
-      "Navigation": "blog"
+      "Navigation": "blog",
+      "url": "/blog/",
+      "navigation": "blog"
     },
     {
       "Url": "/kontakt",
-      "Navigation": "kontakt"
+      "Navigation": "kontakt",
+      "url": "/kontakt/",
+      "navigation": "kontakt"
     }
-  ]
+  ],
+  "brand": "Devlifting"
 }
