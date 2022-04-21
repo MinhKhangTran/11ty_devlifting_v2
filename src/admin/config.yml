@@ -1,0 +1,147 @@
+backend:
+  name: git-gateway
+  branch: main
+media_folder: "_site/images" # Media files will be stored in the repo under static/images/uploads
+public_folder: "/images" # The src attribute for uploaded media will begin with /images/uploads
+
+collections:
+  - name: "components"
+    label: "components"
+    files:
+      - name: "info"
+        label: "Info"
+        file: "src/_data/info.json"
+        fields:
+          - { label: "name", name: "Name", widget: string }
+          - { label: "email", name: "E-Mail", widget: string }
+      - name: "navbar"
+        label: "Navbar"
+        file: "src/_data/navbar.json"
+        fields:
+          - { label: "brand", name: "Brand", widget: string }
+          - {
+              label: "Logo",
+              name: "logo",
+              widget: "image",
+              required: false,
+              hint: "If not specified, Brand will be used as a text link",
+            }
+          - name: "navigations"
+            label: "navigations"
+            widget: "list"
+            fields:
+              - { name: "Url", label: "url", widget: "string" }
+              - { name: "Navigation", label: "navigation", widget: "string" }
+      - name: "footer"
+        label: "footer"
+        file: "src/_data/footer.json"
+        fields:
+          - {
+              label: "Logo",
+              name: "logo",
+              widget: "image",
+              required: false,
+              hint: "If not specified, Brand will be used as a text link",
+            }
+          - { name: "subheading", label: "Subheading", widget: "string" }
+          - { name: "copyright", label: "copyright", widget: "string" }
+          - name: "navigations"
+            label: "navigations"
+            widget: "list"
+            fields:
+              - { name: "Url", label: "url", widget: "string" }
+              - { name: "Navigation", label: "navigation", widget: "string" }
+          - name: "recht"
+            label: "recht"
+            widget: "list"
+            fields:
+              - { name: "Url", label: "url", widget: "string" }
+              - { name: "Navigation", label: "navigation", widget: "string" }
+          - name: "socials"
+            label: "socials"
+            widget: "list"
+            fields:
+              - { name: "Url", label: "url", widget: "string" }
+              - { name: "Navigation", label: "navigation", widget: "string" }
+  - name: "projekte"
+    label: "Projekte"
+    folder: "src/projekte"
+    create: true
+    slug: "{{slug}}"
+    fields:
+      - { label: "Card Heading", name: "card_heading", widget: "string" }
+      - { label: "Card Subheading", name: "card_sub", widget: "string" }
+      - { label: "Card Description", name: "card_desc", widget: "string" }
+      - {
+          label: "Card Image",
+          name: "card_img",
+          widget: "image",
+          required: true,
+        }
+  - name: "blogposts"
+    label: "Blogposts"
+    folder: "src/blogposts"
+    create: true
+    slug: "{{slug}}"
+    fields:
+      - { label: "Card Heading", name: "card_heading", widget: "string" }
+      - { label: "Card Subheading", name: "card_sub", widget: "string" }
+      - { label: "Card Description", name: "card_desc", widget: "string" }
+      - {
+          label: "Card Image",
+          name: "card_img",
+          widget: "image",
+          required: true,
+        }
+  - label: "Pages"
+    name: "pages"
+    files:
+      - name: "homepage"
+        label: "Homepage"
+        file: "src/index.html"
+        fields:
+          - {
+              label: Layout,
+              name: "layout",
+              widget: "hidden",
+              default: "layouts/home.html",
+            }
+          - { label: Title, name: title, widget: string }
+          - { label: "Hero Heading", name: "hero_heading", widget: "string" }
+          - { label: "Hero Subheading", name: "hero_sub", widget: "string" }
+
+      - name: "projekte"
+        label: "projekte"
+        file: "src/projekte.html"
+        fields:
+          - { label: Title, name: title, widget: string, default: "Projekte" }
+          - {
+              label: Layout,
+              name: "layout",
+              widget: "hidden",
+              default: "layouts/projekte.html",
+            }
+      - name: "blog"
+        label: "blog"
+        file: "src/blog.html"
+        fields:
+          - { label: Title, name: title, widget: string, default: "blog" }
+          - {
+              label: Layout,
+              name: "layout",
+              widget: "hidden",
+              default: "layouts/blog.html",
+            }
+      - name: "kontakt"
+        label: "kontakt"
+        file: "src/kontakt.html"
+        fields:
+          - { label: Title, name: title, widget: string, default: "kontakt" }
+          - {
+              label: Layout,
+              name: "layout",
+              widget: "hidden",
+              default: "layouts/kontakt.html",
+            }
+          - { label: "Card Heading", name: "card_heading", widget: "string" }
+          - { label: "Card Subheading", name: "card_sub", widget: "string" }
