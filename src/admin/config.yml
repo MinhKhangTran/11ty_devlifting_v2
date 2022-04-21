@@ -75,13 +75,13 @@ collections:
         file: "src/_data/benefits.json"
         fields:
           - { label: "dummy", name: "dummy", widget: hidden }
-          name: "benefit"
-          label: "benefit"
-          widget: "list"
-          fields:
-            - { name: "icon", label: "icon", widget: "string" }
-            - { name: "benefit_title", label: "Benefit Title", widget: "string" }
-            - { name: "benefit_text", label: "Benefit Text", widget: "string" }
+          - name: "benefit"
+            label: "benefit"
+            widget: "list"
+            fields:
+              - { name: "icon", label: "icon", widget: "string" }
+              - { name: "benefit_title", label: "Benefit Title", widget: "string" }
+              - { name: "benefit_text", label: "Benefit Text", widget: "string" }
   - name: "projekte"
     label: "Projekte"
     folder: "src/projekte"
