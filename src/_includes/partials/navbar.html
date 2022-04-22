@@ -1,1 +1,20 @@
-<nav>nav</nav>
+<div class="nav__wrapper border-bottom border-dark border-2">
+  <nav
+    class="d-flex mx-auto justify-content-md-between align-items-md-center flex-column flex-md-row"
+  >
+    <div class="logo">
+      <a href="/">
+        <img src="/images/Logo.svg" alt="home" />
+      </a>
+    </div>
+    <ul class="d-flex pt-3 pt-md-0">
+      {% for navigation in navbar.navigations %}
+      <li class="text-capitalize">
+        <a class="text-dark" href="{{navigation.url}}">
+          {{navigation.navigation}}
+        </a>
+      </li>
+      {% endfor %}
+    </ul>
+  </nav>
+</div>

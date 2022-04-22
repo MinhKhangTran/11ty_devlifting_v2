@@ -1,0 +1,28 @@
+@use "sass:math";
+
+nav {
+  width: 90%;
+  max-width: 1200px;
+  padding-block: 1rem;
+  @include md {
+    padding-block: math.div(11rem, 16);
+  }
+  img {
+    height: 18px;
+    @include md {
+      height: 32px;
+    }
+  }
+  ul {
+    gap: 2rem;
+    @include md {
+      gap: math.div(64rem, 16);
+    }
+    a {
+      font-weight: 500;
+      @include md {
+        font-size: math.div(24rem, 16);
+      }
+    }
+  }
+}
