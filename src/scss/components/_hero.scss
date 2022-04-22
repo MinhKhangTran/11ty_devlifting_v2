@@ -1,1 +1,14 @@
 @use "sass:math";
+
+#hero {
+  padding-top: math.div(64rem, 16);
+  @include md {
+    padding-top: math.div(102rem, 16);
+  }
+  p {
+    padding-block: 1rem 1.5rem;
+    @include md {
+      padding-block: 1.5rem 2rem;
+    }
+  }
+}

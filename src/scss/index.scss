@@ -1,5 +1,5 @@
 // load fonts
-@import url("https://fonts.googleapis.com/css2?family=Lato:wght@700&family=Poppins:wght@400;500&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Lato:wght@700&family=Poppins:wght@400;500;600&display=swap");
 
 // Bootstrap functions
 @import "../../node_modules/bootstrap/scss/functions";
@@ -44,6 +44,7 @@ $link-decoration: none;
 @import "components/navbar";
 @import "components/hero";
 @import "components/button";
+@import "components/wrapper";
 @import "components/scrollbar";
 @import "components/feat";
 @import "components/featuredWork";

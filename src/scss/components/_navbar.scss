@@ -1,8 +1,6 @@
 @use "sass:math";
 
 nav {
-  width: 90%;
-  max-width: 1200px;
   padding-block: 1rem;
   @include md {
     padding-block: math.div(11rem, 16);
