@@ -11346,6 +11346,7 @@ nav ul a {
   transition: box-shadow 0.35s ease-in-out;
   font-size: 1rem;
   font-weight: 600;
+  background-color: #98654c;
 }
 @media (min-width: 768px) {
   .btn-main {
@@ -11390,4 +11391,22 @@ nav ul a {
 ::-webkit-scrollbar-thumb {
   background-color: #40160b;
   border-radius: 0.25rem;
+}
+
+#feat {
+  padding-top: 5.5rem;
+}
+#feat .row {
+  gap: 2.5rem;
+}
+@media (min-width: 768px) {
+  #feat .row {
+    gap: 0;
+  }
+}
+#feat .kasten {
+  width: 100px;
+  height: 100px;
+  border-radius: 10px;
+  box-shadow: 3px 3px 0px #000000;
 }

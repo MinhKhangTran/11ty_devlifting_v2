@@ -9,6 +9,7 @@
   transition: box-shadow 0.35s ease-in-out;
   font-size: 1rem;
   font-weight: 600;
+  background-color: #98654c;
   @include md {
     font-size: math.div(20rem, 16);
     padding-inline: math.div(20rem, 16);

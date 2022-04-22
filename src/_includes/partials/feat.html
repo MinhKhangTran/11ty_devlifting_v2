@@ -1,1 +1,21 @@
-<section id="feat" aria-label="feat section">feat</section>
+<section class="wrapper" id="feat" aria-label="feat section">
+  <div class="row">
+    {% for benefit in benefits.benefit %}
+    <article
+      class="col-md-4 | d-flex flex-column justify-content-center align-items-center"
+    >
+      <div
+        class="kasten | bg-primary d-flex justify-content-center align-items-center border border-dark border-2"
+      >
+        <img src="/images/{{benefit.icon}}.svg" alt="" />
+        <span class="visually-hidden">{{benefit.benefit_title}} icon</span>
+      </div>
+
+      <h2 class="heading-2 | text-capitalize text-primary text-center py-3">
+        {{benefit.benefit_title}}
+      </h2>
+      <p class="body-lg | text-dark text-center">{{benefit.benefit_text}}</p>
+    </article>
+    {% endfor %}
+  </div>
+</section>

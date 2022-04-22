@@ -1,1 +1,17 @@
 @use "sass:math";
+
+#feat {
+  padding-top: math.div(88rem, 16);
+  .row {
+    gap: math.div(40rem, 16);
+    @include md {
+      gap: 0;
+    }
+  }
+  .kasten {
+    width: 100px;
+    height: 100px;
+    border-radius: 10px;
+    box-shadow: 3px 3px 0px #000000;
+  }
+}
