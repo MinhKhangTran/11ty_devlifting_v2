@@ -174,27 +174,31 @@ collections:
               default: "layouts/home.html",
             }
           - { label: Title, name: title, widget: string }
-          - {
-              label: "Homepage Cta Heading",
-              name: "home_cta_heading",
-              widget: "string",
-              required: false,
-              hint: "Standard CTA wird genommen",
-            }
-          - {
-              label: "HomepageCta Subheading",
-              name: "home_cta_sub",
-              widget: "string",
-              required: false,
-              hint: "Standard CTA wird genommen",
-            }
-          - {
-              label: "Homepage Cta Button",
-              name: "home_cta_button",
-              widget: "string",
-              required: false,
-              hint: "Standard CTA wird genommen",
-            }
+          - label: "Homepage Cta"
+            name: "homepage cta"
+            widget: "object"
+            fields:
+              - {
+                  label: "Cta Heading",
+                  name: "cta_heading",
+                  widget: "string",
+                  required: false,
+                  hint: "Standard CTA wird genommen",
+                }
+              - {
+                  label: "Cta Subheading",
+                  name: "cta_sub",
+                  widget: "string",
+                  required: false,
+                  hint: "Standard CTA wird genommen",
+                }
+              - {
+                  label: "Cta Button",
+                  name: "cta_button",
+                  widget: "string",
+                  required: false,
+                  hint: "Standard CTA wird genommen",
+                }
       - name: "projekte"
         label: "projekte"
         file: "src/projekte.html"
