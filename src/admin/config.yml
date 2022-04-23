@@ -175,7 +175,7 @@ collections:
             }
           - { label: Title, name: title, widget: string }
           - label: "Homepage Cta"
-            name: "homepage cta"
+            name: "homepage_cta"
             widget: "object"
             fields:
               - {
@@ -210,27 +210,31 @@ collections:
               widget: "hidden",
               default: "layouts/projekte.html",
             }
-          - {
-              label: "Projekte Cta Heading",
-              name: "project_cta_heading",
-              widget: "string",
-              required: false,
-              hint: "Standard CTA wird genommen",
-            }
-          - {
-              label: "Projekte Cta Subheading",
-              name: "project_cta_sub",
-              widget: "string",
-              required: false,
-              hint: "Standard CTA wird genommen",
-            }
-          - {
-              label: "Projekte Cta Button",
-              name: "project_cta_button",
-              widget: "string",
-              required: false,
-              hint: "Standard CTA wird genommen",
-            }
+          - label: "Projekte Cta"
+            name: "projekte_cta"
+            widget: "object"
+            fields:
+              - {
+                  label: "Cta Heading",
+                  name: "cta_heading",
+                  widget: "string",
+                  required: false,
+                  hint: "Standard CTA wird genommen",
+                }
+              - {
+                  label: "Cta Subheading",
+                  name: "cta_sub",
+                  widget: "string",
+                  required: false,
+                  hint: "Standard CTA wird genommen",
+                }
+              - {
+                  label: "Cta Button",
+                  name: "cta_button",
+                  widget: "string",
+                  required: false,
+                  hint: "Standard CTA wird genommen",
+                }
       - name: "blog"
         label: "blog"
         file: "src/blog.html"
@@ -242,27 +246,31 @@ collections:
               widget: "hidden",
               default: "layouts/blog.html",
             }
-          - {
-              label: "Blog Cta Heading",
-              name: "blog_cta_heading",
-              widget: "string",
-              required: false,
-              hint: "Standard CTA wird genommen",
-            }
-          - {
-              label: "Blog Cta Subheading",
-              name: "blog_cta_sub",
-              widget: "string",
-              required: false,
-              hint: "Standard CTA wird genommen",
-            }
-          - {
-              label: "Blog Cta Button",
-              name: "blog_cta_button",
-              widget: "string",
-              required: false,
-              hint: "Standard CTA wird genommen",
-            }
+          - label: "Blog Cta"
+            name: "blog_cta"
+            widget: "object"
+            fields:
+              - {
+                  label: "Cta Heading",
+                  name: "cta_heading",
+                  widget: "string",
+                  required: false,
+                  hint: "Standard CTA wird genommen",
+                }
+              - {
+                  label: "Cta Subheading",
+                  name: "cta_sub",
+                  widget: "string",
+                  required: false,
+                  hint: "Standard CTA wird genommen",
+                }
+              - {
+                  label: "Cta Button",
+                  name: "cta_button",
+                  widget: "string",
+                  required: false,
+                  hint: "Standard CTA wird genommen",
+                }
       - name: "kontakt"
         label: "kontakt"
         file: "src/kontakt.html"
