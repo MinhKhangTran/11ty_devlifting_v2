@@ -1,1 +1,6 @@
-<section id="cta" aria-label="cta section">cta</section>
+{% set ctaPrefix = cta %} {% if ctaContent %} {% set ctaPrefix = ctaContent %}
+{% endif %}
+
+<section id="cta" aria-label="cta section">
+  <h2 class="cta-heading">{{ctaPrefix.cta_heading}}</h2>
+</section>

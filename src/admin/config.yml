@@ -76,7 +76,7 @@ collections:
         fields:
           - { label: "Cta Heading", name: "cta_heading", widget: "string" }
           - { label: "Cta Subheading", name: "cta_sub", widget: "string" }
-          - { label: "Cta Button", name: "cta_btn", widget: "string" }
+          - { label: "Cta Button", name: "cta_button", widget: "string" }
       - name: "benefits"
         label: "benefits"
         file: "src/_data/benefits.json"
@@ -174,8 +174,8 @@ collections:
               default: "layouts/home.html",
             }
           - { label: Title, name: title, widget: string }
-          - label: "Homepage Cta"
-            name: "homepage_cta"
+          - label: "Page Cta"
+            name: "page_cta"
             widget: "object"
             fields:
               - {
@@ -210,8 +210,8 @@ collections:
               widget: "hidden",
               default: "layouts/projekte.html",
             }
-          - label: "Projekte Cta"
-            name: "projekte_cta"
+          - label: "Page Cta"
+            name: "page_cta"
             widget: "object"
             fields:
               - {
@@ -246,8 +246,8 @@ collections:
               widget: "hidden",
               default: "layouts/blog.html",
             }
-          - label: "Blog Cta"
-            name: "blog_cta"
+          - label: "Page Cta"
+            name: "page_cta"
             widget: "object"
             fields:
               - {
