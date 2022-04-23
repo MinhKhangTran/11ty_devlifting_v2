@@ -238,7 +238,7 @@ collections:
               widget: "hidden",
               default: "layouts/blog.html",
             }
-                    - {
+          - {
               label: "Blog Cta Heading",
               name: "blog_cta_heading",
               widget: "string",
