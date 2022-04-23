@@ -1,1 +1,48 @@
-<section id="process" aria-label="process section">process</section>
+<section class="bg-secondary" id="process" aria-label="process section">
+  <div class="wrapper">
+    <h2 class="heading-2 text-dark text-md-center">{{process.title}}</h2>
+    <p class="body-lg text-dark text-md-center mx-md-auto">{{process.desc}}</p>
+
+    {% for step in process.steps %} {% set gerade = loop.index % 2 == 0 %}
+    <article
+      class="step step__{{loop.index}} | d-md-flex {% if gerade %}flex-md-row-reverse{% else %}flex-md-row{% endif %}"
+    >
+      <div class="left__panel">
+        <h3 class="heading-3 text-dark text-uppercase">
+          {{step.benefit_title}}
+        </h3>
+        <ul class="bulletpoints">
+          {% for bulletpoint in step.bulletpoints %}
+          <li class="d-flex align-items-start gap-2 gap-md-3">
+            <span class="">
+              <svg
+                width="23"
+                height="23"
+                viewBox="0 0 23 23"
+                fill="none"
+                xmlns="http://www.w3.org/2000/svg"
+              >
+                <path
+                  fill-rule="evenodd"
+                  clip-rule="evenodd"
+                  d="M7.51082 15.5367L2.25628 10.672L0 12.7609L7.51082 19.7143L23 5.37461L20.7437 3.28577L7.51082 15.5367Z"
+                  fill="#FFF7F2"
+                />
+              </svg>
+            </span>
+            <span>{{bulletpoint.bulletpoint}}</span>
+          </li>
+          {% endfor %}
+        </ul>
+      </div>
+      <div class="right__panel | d-flex justify-content-center">
+        <img
+          class="img-fluid {% if gerade %}me-md-auto{% else %}ms-md-auto{% endif %}"
+          src="/images/{{step.image}}.svg"
+          alt="{{step.benefit_title}} bild"
+        />
+      </div>
+    </article>
+    {% endfor %}
+  </div>
+</section>

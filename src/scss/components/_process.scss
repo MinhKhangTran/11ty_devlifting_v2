@@ -1,0 +1,49 @@
+@use "sass:math";
+
+#process {
+  padding-block: math.div(32rem, 16);
+  margin-top: math.div(88rem, 16);
+  border-bottom: 2px solid $dark;
+  border-top: 2px solid $dark;
+  @include md {
+    padding-block: math.div(48rem, 16);
+    margin-top: math.div(102rem, 16);
+  }
+  p {
+    padding-block: 0.5rem 2rem;
+    @include md {
+      width: 550px;
+    }
+  }
+  .step__2,
+  .step__3 {
+    padding-top: math.div(48rem, 16);
+    @include md {
+      padding-top: math.div(88rem, 16);
+    }
+  }
+  .left__panel {
+    @include md {
+      width: 50%;
+    }
+    h3 {
+      padding-bottom: 1rem;
+    }
+    .bulletpoints {
+      li:not(:first-child) {
+        padding-top: 0.5rem;
+        @include md {
+          padding-top: 1rem;
+        }
+      }
+    }
+  }
+  .right__panel {
+    padding-top: 1rem;
+
+    @include md {
+      padding-top: 0;
+      width: 50%;
+    }
+  }
+}
