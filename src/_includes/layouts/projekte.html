@@ -1,1 +1,3 @@
-{% extends "layouts/base.html" %} {% block content %} {% endblock %}
+{% extends "layouts/base.html" %} {% block content %} {% if page_cta %} {% set
+ctaContent = page_cta %} {% endif %} {% include "partials/cta.html" %} {%
+endblock %}
