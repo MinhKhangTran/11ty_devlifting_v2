@@ -70,6 +70,13 @@ collections:
           - { label: "Hero Heading", name: "hero_heading", widget: "string" }
           - { label: "Hero Subheading", name: "hero_sub", widget: "string" }
           - { label: "Hero Button", name: "hero_btn", widget: "string" }
+      - name: "cta"
+        label: "cta"
+        file: "src/_data/cta.json"
+        fields:
+          - { label: "Cta Heading", name: "cta_heading", widget: "string" }
+          - { label: "Cta Subheading", name: "cta_sub", widget: "string" }
+          - { label: "Cta Button", name: "cta_btn", widget: "string" }
       - name: "benefits"
         label: "benefits"
         file: "src/_data/benefits.json"
@@ -80,25 +87,41 @@ collections:
             widget: "list"
             fields:
               - { name: "icon", label: "icon", widget: "string" }
-              - { name: "benefit_title", label: "Benefit Title", widget: "string" }
-              - { name: "benefit_text", label: "Benefit Text", widget: "string" }
+              - {
+                  name: "benefit_title",
+                  label: "Benefit Title",
+                  widget: "string",
+                }
+              - {
+                  name: "benefit_text",
+                  label: "Benefit Text",
+                  widget: "string",
+                }
       - name: "process"
         label: "process"
         file: "src/_data/process.json"
         fields:
           - { label: "title", name: "title", widget: string }
-          - { label: "desc", name: "desc", widget: string}
+          - { label: "desc", name: "desc", widget: string }
           - name: "steps"
             label: "steps"
             widget: "list"
             fields:
               - { name: "image", label: "image", widget: "string" }
-              - { name: "benefit_title", label: "Benefit Title", widget: "string" }
-              - name: "bulletpoints" 
+              - {
+                  name: "benefit_title",
+                  label: "Benefit Title",
+                  widget: "string",
+                }
+              - name: "bulletpoints"
                 label: "bulletpoints"
                 widget: "list"
                 fields:
-                  - {name: "bulletpoint", label: "bulletpoint", widget: "string" }
+                  - {
+                      name: "bulletpoint",
+                      label: "bulletpoint",
+                      widget: "string",
+                    }
       - name: "socials"
         label: "socials"
         file: "src/_data/socials.json"
@@ -121,12 +144,7 @@ collections:
       - { label: "Title", name: "title", widget: "string" }
       - { label: "Description", name: "description", widget: "string" }
       - { label: "Date", name: "date", widget: "datetime" }
-      - {
-          label: "Image",
-          name: "img",
-          widget: "image",
-          required: true,
-        }
+      - { label: "Image", name: "img", widget: "image", required: true }
   - name: "blogposts"
     label: "Blogposts"
     folder: "src/blogposts"
@@ -156,6 +174,27 @@ collections:
               default: "layouts/home.html",
             }
           - { label: Title, name: title, widget: string }
+          - {
+              label: "Homepage Cta Heading",
+              name: "home_cta_heading",
+              widget: "string",
+              required: false,
+              hint: "Standard CTA wird genommen",
+            }
+          - {
+              label: "HomepageCta Subheading",
+              name: "home_cta_sub",
+              widget: "string",
+              required: false,
+              hint: "Standard CTA wird genommen",
+            }
+          - {
+              label: "Homepage Cta Button",
+              name: "home_cta_button",
+              widget: "string",
+              required: false,
+              hint: "Standard CTA wird genommen",
+            }
       - name: "projekte"
         label: "projekte"
         file: "src/projekte.html"
@@ -166,6 +205,27 @@ collections:
               name: "layout",
               widget: "hidden",
               default: "layouts/projekte.html",
+            }
+          - {
+              label: "Projekte Cta Heading",
+              name: "project_cta_heading",
+              widget: "string",
+              required: false,
+              hint: "Standard CTA wird genommen",
+            }
+          - {
+              label: "Projekte Cta Subheading",
+              name: "project_cta_sub",
+              widget: "string",
+              required: false,
+              hint: "Standard CTA wird genommen",
+            }
+          - {
+              label: "Projekte Cta Button",
+              name: "project_cta_button",
+              widget: "string",
+              required: false,
+              hint: "Standard CTA wird genommen",
             }
       - name: "blog"
         label: "blog"
@@ -178,6 +238,27 @@ collections:
               widget: "hidden",
               default: "layouts/blog.html",
             }
+                    - {
+              label: "Blog Cta Heading",
+              name: "blog_cta_heading",
+              widget: "string",
+              required: false,
+              hint: "Standard CTA wird genommen",
+            }
+          - {
+              label: "Blog Cta Subheading",
+              name: "blog_cta_sub",
+              widget: "string",
+              required: false,
+              hint: "Standard CTA wird genommen",
+            }
+          - {
+              label: "Blog Cta Button",
+              name: "blog_cta_button",
+              widget: "string",
+              required: false,
+              hint: "Standard CTA wird genommen",
+            }
       - name: "kontakt"
         label: "kontakt"
         file: "src/kontakt.html"
@@ -189,4 +270,3 @@ collections:
               widget: "hidden",
               default: "layouts/kontakt.html",
             }
-
