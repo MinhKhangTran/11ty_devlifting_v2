@@ -1,1 +1,44 @@
 @use "sass:math";
+
+footer {
+  padding-block: 2rem 1rem;
+  .left__panel {
+    width: 90%;
+    max-width: 400px;
+    p {
+      padding-block: 0.5rem 1rem;
+    }
+    .socials {
+      gap: 1.5rem;
+      .path {
+        transition: all 0.35s ease-in;
+      }
+      a:hover .path {
+        fill: $primary;
+      }
+    }
+  }
+  .right__panel {
+    @include md {
+      gap: math.div(64rem, 16);
+    }
+    @include lg {
+      gap: math.div(102rem, 16);
+    }
+    a {
+      text-decoration: underline;
+      font-size: 1.125rem;
+    }
+    .navigations,
+    .recht {
+      li:not(:first-child) {
+        padding-top: 0.5rem;
+      }
+    }
+  }
+  .copyright {
+    padding-top: 1rem;
+    margin-top: math.div(40rem, 16);
+    border-top: 1px solid $primary;
+  }
+}

@@ -11278,8 +11278,13 @@ ul {
 }
 
 .body-lg {
-  font-size: 1.125rem;
+  font-size: 1rem;
   line-height: 150%;
+}
+@media (min-width: 768px) {
+  .body-lg {
+    font-size: 1.125rem;
+  }
 }
 
 .body-sm {
@@ -11409,4 +11414,47 @@ nav ul a {
   height: 100px;
   border-radius: 10px;
   box-shadow: 3px 3px 0px #000000;
+}
+
+footer {
+  padding-block: 2rem 1rem;
+}
+footer .left__panel {
+  width: 90%;
+  max-width: 400px;
+}
+footer .left__panel p {
+  padding-block: 0.5rem 1rem;
+}
+footer .left__panel .socials {
+  gap: 1.5rem;
+}
+footer .left__panel .socials .path {
+  transition: all 0.35s ease-in;
+}
+footer .left__panel .socials a:hover .path {
+  fill: #a97155;
+}
+@media (min-width: 768px) {
+  footer .right__panel {
+    gap: 4rem;
+  }
+}
+@media (min-width: 992px) {
+  footer .right__panel {
+    gap: 6.375rem;
+  }
+}
+footer .right__panel a {
+  text-decoration: underline;
+  font-size: 1.125rem;
+}
+footer .right__panel .navigations li:not(:first-child),
+footer .right__panel .recht li:not(:first-child) {
+  padding-top: 0.5rem;
+}
+footer .copyright {
+  padding-top: 1rem;
+  margin-top: 2.5rem;
+  border-top: 1px solid #a97155;
 }

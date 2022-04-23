@@ -42,8 +42,11 @@
   }
 }
 .body-lg {
-  font-size: math.div(18rem, 16);
+  font-size: math.div(16rem, 16);
   line-height: 150%;
+  @include md {
+    font-size: math.div(18rem, 16);
+  }
 }
 .body-sm {
   font-size: math.div(16rem, 16);
