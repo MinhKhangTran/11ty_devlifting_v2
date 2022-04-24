@@ -41,6 +41,13 @@
     font-size: math.div(48rem, 16);
   }
 }
+.cta-heading-sm {
+  font-size: math.div(24rem, 16);
+  font-weight: 700;
+  @include md {
+    font-size: math.div(40rem, 16);
+  }
+}
 .body-lg {
   font-size: math.div(16rem, 16);
   line-height: 150%;

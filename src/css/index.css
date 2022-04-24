@@ -11277,6 +11277,16 @@ ul {
   }
 }
 
+.cta-heading-sm {
+  font-size: 1.5rem;
+  font-weight: 700;
+}
+@media (min-width: 768px) {
+  .cta-heading-sm {
+    font-size: 2.5rem;
+  }
+}
+
 .body-lg {
   font-size: 1rem;
   line-height: 150%;
@@ -11414,6 +11424,20 @@ nav ul a {
   height: 100px;
   border-radius: 10px;
   box-shadow: 3px 3px 0px #000000;
+}
+
+#cta {
+  padding-block: 4rem;
+  border-top: 2px solid #402e32;
+  border-bottom: 2px solid #402e32;
+}
+#cta p {
+  padding-block: 0.5rem 1rem;
+}
+@media (min-width: 768px) {
+  #cta p {
+    padding-block: 0.5rem 2.5rem;
+  }
 }
 
 footer {
