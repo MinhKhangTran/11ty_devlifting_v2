@@ -5,7 +5,7 @@
 
     {% for step in process.steps %} {% set gerade = loop.index % 2 == 0 %}
     <article
-      class="step step__{{loop.index}} | d-md-flex {% if gerade %}flex-md-row-reverse{% else %}flex-md-row{% endif %}"
+      class="step step__{{loop.index}} | d-md-flex align-items-center {% if gerade %}flex-md-row-reverse{% else %}flex-md-row{% endif %}"
     >
       <div class="left__panel">
         <h3 class="heading-3 text-dark text-uppercase">
