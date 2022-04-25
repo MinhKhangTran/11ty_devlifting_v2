@@ -1,0 +1,16 @@
+{
+  "image": "website",
+  "desc1": "Für wen sind meine Leistungen weniger geeignet:",
+  "title": "Obacht!",
+  "bulletpoints": [
+    {
+      "bulletpoint": "Du willst ein neues Facebook oder ähnliche Apps erstellen"
+    },
+    {
+      "bulletpoint": "Deine Webseite soll aussehen wie jede andere Webseite"
+    },
+    {
+      "bulletpoint": "Du hast keine Interesse an eine Webpräsenz"
+    }
+  ]
+}
