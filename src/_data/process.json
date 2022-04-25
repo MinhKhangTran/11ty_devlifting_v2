@@ -7,13 +7,13 @@
       "benefit_title": "individuelles design",
       "bulletpoints": [
         {
-          "bulletpoint": "Planing & implementing your goals for the website"
+          "bulletpoint": "Planung und Umsetzung Ihrer Ziele für die Website"
         },
         {
-          "bulletpoint": "Building Wireframing for desktop and handheld devices"
+          "bulletpoint": "Erstellung von Wireframing für Desktop- und Handheld-Geräte"
         },
         {
-          "bulletpoint": "From the beginning the focus is on UX/UI, Conversion and Accessibility."
+          "bulletpoint": "Von Anfang an liegt der Fokus bei mir auf UX/UI, Conversion und Barrierefreiheit"
         }
       ]
     },
@@ -22,13 +22,13 @@
       "benefit_title": "entwicklung",
       "bulletpoints": [
         {
-          "bulletpoint": "Converting design mockups with HTML/CSS and Javascript"
+          "bulletpoint": "Umsetzung von Design-Mockups mit HTML/CSS und Javascript"
         },
         {
-          "bulletpoint": "Developing static sites with the latest technologies"
+          "bulletpoint": "Entwicklung von statischen Websites mit den neuesten Technologien"
         },
         {
-          "bulletpoint": "Usage of a CMS"
+          "bulletpoint": "Verwendung eines CMS"
         }
       ]
     },
@@ -37,13 +37,13 @@
       "image": "deploy",
       "bulletpoints": [
         {
-          "bulletpoint": "Testing accessibility and reviewing the design"
+          "bulletpoint": "Testen der Zugänglichkeit und Überprüfen des Designs"
         },
         {
-          "bulletpoint": "Launching and promoting your website"
+          "bulletpoint": "Veröffentlichung und Bewerbung Ihrer Website"
         },
         {
-          "bulletpoint": "Increasing the traffic on your landing page and optimize your conversions "
+          "bulletpoint": "den Traffic auf Ihrer Webseite erhöhen und Ihre Konversionen optimieren"
         }
       ]
     }
