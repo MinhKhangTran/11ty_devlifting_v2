@@ -135,6 +135,30 @@ collections:
               - { name: "social_name", label: "social name", widget: "string" }
               - { name: "social_job", label: "social job", widget: "string" }
               - { name: "social_img", label: "social image", widget: "string" }
+      - name: "intro1"
+        label: "intro1"
+        file: "src/_data/intro1.json"
+        fields:
+          - { name: "title", label: "title", widget: "string"}
+          - { name: "desc1", label: "desc1", widget: "string"}
+          - { name: "desc2", label: "desc2", widget: "string"}
+          - name: "bulletpoints"
+            label: "bulletpoints"
+            widget: "list"
+            fields:
+              - { name: "bulletpoint", label: "bulletpoint", widget: "string"}
+      - name: "intro2"
+        label: "intro2"
+        file: "src/_data/intro2.json"
+        fields:
+          - { name: "title", label: "title", widget: "string"}
+          - { name: "desc1", label: "desc1", widget: "string"}
+          - { name: "desc2", label: "desc2", widget: "string"}
+          - name: "bulletpoints"
+            label: "bulletpoints"
+            widget: "list"
+            fields:
+              - { name: "bulletpoint", label: "bulletpoint", widget: "string"}
   - name: "projekte"
     label: "Projekte"
     folder: "src/projekte"
