@@ -142,6 +142,7 @@ collections:
           - { name: "title", label: "title", widget: "string"}
           - { name: "desc1", label: "desc1", widget: "string"}
           - { name: "desc2", label: "desc2", widget: "string"}
+          - { name: "image", label: "image", widget: "string"}
           - name: "bulletpoints"
             label: "bulletpoints"
             widget: "list"
@@ -153,7 +154,7 @@ collections:
         fields:
           - { name: "title", label: "title", widget: "string"}
           - { name: "desc1", label: "desc1", widget: "string"}
-          - { name: "desc2", label: "desc2", widget: "string"}
+          - { name: "image", label: "image", widget: "string"}
           - name: "bulletpoints"
             label: "bulletpoints"
             widget: "list"
