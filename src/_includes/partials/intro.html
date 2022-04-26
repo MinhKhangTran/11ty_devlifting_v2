@@ -1,8 +1,66 @@
 <section id="intro" aria-label="intro section">
   <div class="static__wrapper | bg-white">
     <div class="sm__wrapper">
-      <h2 class="text-center text-dark">{{intro1.title}}</h2>
-      <p class="text-center text-dark">{{intro1.desc1}}</p>
+      <h2 class="heading-2 | text-center text-dark">{{intro1.title}}</h2>
+      <p class="body-lg | text-center text-dark">{{intro1.desc1}}</p>
+    </div>
+  </div>
+  <div class="bg-light">
+    <div
+      class="geeignet__wrapper | wrapper | d-flex flex-md-row flex-column gap-4"
+    >
+      <div
+        class="pro__wrapper | position-relative border border-2 border-dark bg-white w-100 w-md-50"
+      >
+        <div class="text__wrapper">
+          <p class="body-lg">{{intro1.desc2}}</p>
+          <ul>
+            {% for bullet in intro1.bulletpoints %}
+            <li class="body-lg">{{bullet.bulletpoint}}</li>
+            {% endfor %}
+          </ul>
+        </div>
+        <svg
+          class="position-absolute"
+          width="150"
+          height="150"
+          viewBox="0 0 150 150"
+          fill="none"
+          xmlns="http://www.w3.org/2000/svg"
+        >
+          <path
+            d="M75.0002 0C33.5786 0 0 33.5786 0 75.0002C0 116.422 33.5786 150 75.0002 150C116.422 150 150 116.422 150 75.0002C150 33.5786 116.421 0 75.0002 0ZM75.0002 131.25C43.9344 131.25 18.7502 106.066 18.7502 75.0002C18.7502 43.9344 43.9344 18.7502 75.0002 18.7502C106.066 18.7502 131.25 43.9344 131.25 75.0002C131.25 106.066 106.066 131.25 75.0002 131.25Z"
+            fill="#198754"
+            fill-opacity="0.1"
+          />
+        </svg>
+      </div>
+      <div
+        class="contra__wrapper | position-relative border border-2 border-dark bg-white w-100 w-md-50"
+      >
+        <div class="text__wrapper | ms-md-auto">
+          <p class="body-lg">{{intro2.desc1}}</p>
+          <ul>
+            {% for bullet in intro2.bulletpoints %}
+            <li class="body-lg">{{bullet.bulletpoint}}</li>
+            {% endfor %}
+          </ul>
+        </div>
+        <svg
+          class="position-absolute"
+          width="120"
+          height="120"
+          viewBox="0 0 120 120"
+          fill="none"
+          xmlns="http://www.w3.org/2000/svg"
+        >
+          <path
+            d="M60.066 46.765L13.6505 0.349515L0.415532 13.5845L46.8311 60L0.415532 106.416L13.6505 119.65L60.066 73.235L106.482 119.65L119.717 106.416L73.301 60L119.717 13.5845L106.482 0.349515L60.066 46.765Z"
+            fill="#DC3545"
+            fill-opacity="0.1"
+          />
+        </svg>
+      </div>
     </div>
   </div>
 </section>

@@ -2,11 +2,10 @@
 
 #process {
   padding-block: math.div(48rem, 16);
-  margin-top: math.div(88rem, 16);
+
   @include border;
   @include md {
     padding-block: math.div(80rem, 16);
-    margin-top: math.div(102rem, 16);
   }
   p {
     padding-block: 0.5rem 2rem;

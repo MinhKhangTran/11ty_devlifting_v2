@@ -8,18 +8,45 @@
   .static__wrapper {
     padding-block: math.div(80rem, 16);
     @include border;
-    h2 {
-      font-size: math.div(36rem, 16);
-      @include md {
-        font-size: math.div(40rem, 16);
+
+    p {
+      padding-top: 1rem;
+    }
+  }
+  .geeignet__wrapper {
+    padding-block: math.div(48rem, 16);
+    .pro__wrapper {
+      border-radius: 8px;
+      box-shadow: 3px 3px 0px #000000;
+      padding: 2rem;
+      svg {
+        left: 50%;
+        top: 50%;
+        transform: translate(-50%, -50%);
+      }
+      p {
+        color: #0f5132;
       }
     }
-    p {
-      font-size: math.div(18rem, 16);
-      line-height: 150%;
-      padding-top: 1rem;
-      @include md {
-        font-size: math.div(20rem, 16);
+    .contra__wrapper {
+      border-radius: 8px;
+      box-shadow: 3px 3px 0px #000000;
+      padding: 2rem;
+      svg {
+        left: 50%;
+        top: 50%;
+        transform: translate(-50%, -50%);
+      }
+      p {
+        color: #842029;
+      }
+    }
+    .text__wrapper {
+      p {
+        font-weight: 600;
+      }
+      ul {
+        list-style-type: disc;
       }
     }
   }

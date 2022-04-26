@@ -11491,14 +11491,12 @@ footer .copyright {
 
 #process {
   padding-block: 3rem;
-  margin-top: 5.5rem;
   border-bottom: solid 2px #402e32;
   border-top: solid 2px #402e32;
 }
 @media (min-width: 768px) {
   #process {
     padding-block: 5rem;
-    margin-top: 6.375rem;
   }
 }
 #process p {
@@ -11558,21 +11556,41 @@ footer .copyright {
   border-bottom: solid 2px #402e32;
   border-top: solid 2px #402e32;
 }
-#intro .static__wrapper h2, #intro .static__wrapper .h2 {
-  font-size: 2.25rem;
-}
-@media (min-width: 768px) {
-  #intro .static__wrapper h2, #intro .static__wrapper .h2 {
-    font-size: 2.5rem;
-  }
-}
 #intro .static__wrapper p {
-  font-size: 1.125rem;
-  line-height: 150%;
   padding-top: 1rem;
 }
-@media (min-width: 768px) {
-  #intro .static__wrapper p {
-    font-size: 1.25rem;
-  }
+#intro .geeignet__wrapper {
+  padding-block: 3rem;
+}
+#intro .geeignet__wrapper .pro__wrapper {
+  border-radius: 8px;
+  box-shadow: 3px 3px 0px #000000;
+  padding: 2rem;
+}
+#intro .geeignet__wrapper .pro__wrapper svg {
+  left: 50%;
+  top: 50%;
+  transform: translate(-50%, -50%);
+}
+#intro .geeignet__wrapper .pro__wrapper p {
+  color: #0f5132;
+}
+#intro .geeignet__wrapper .contra__wrapper {
+  border-radius: 8px;
+  box-shadow: 3px 3px 0px #000000;
+  padding: 2rem;
+}
+#intro .geeignet__wrapper .contra__wrapper svg {
+  left: 50%;
+  top: 50%;
+  transform: translate(-50%, -50%);
+}
+#intro .geeignet__wrapper .contra__wrapper p {
+  color: #842029;
+}
+#intro .geeignet__wrapper .text__wrapper p {
+  font-weight: 600;
+}
+#intro .geeignet__wrapper .text__wrapper ul {
+  list-style-type: disc;
 }
