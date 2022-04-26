@@ -11434,8 +11434,8 @@ nav ul a {
 
 #cta {
   padding-block: 4rem;
-  border-top: 2px solid #402e32;
-  border-bottom: 2px solid #402e32;
+  border-bottom: solid 2px #402e32;
+  border-top: solid 2px #402e32;
 }
 #cta p {
   padding-block: 0.5rem 1rem;
@@ -11492,8 +11492,8 @@ footer .copyright {
 #process {
   padding-block: 3rem;
   margin-top: 5.5rem;
-  border-bottom: 2px solid #402e32;
-  border-top: 2px solid #402e32;
+  border-bottom: solid 2px #402e32;
+  border-top: solid 2px #402e32;
 }
 @media (min-width: 768px) {
   #process {
@@ -11542,5 +11542,37 @@ footer .copyright {
   #process .right__panel {
     padding-top: 0;
     width: 50%;
+  }
+}
+
+#intro {
+  padding-top: 5.5rem;
+}
+@media (min-width: 768px) {
+  #intro {
+    padding-top: 6.375rem;
+  }
+}
+#intro .static__wrapper {
+  padding-block: 5rem;
+  border-bottom: solid 2px #402e32;
+  border-top: solid 2px #402e32;
+}
+#intro .static__wrapper h2, #intro .static__wrapper .h2 {
+  font-size: 2.25rem;
+}
+@media (min-width: 768px) {
+  #intro .static__wrapper h2, #intro .static__wrapper .h2 {
+    font-size: 2.5rem;
+  }
+}
+#intro .static__wrapper p {
+  font-size: 1.125rem;
+  line-height: 150%;
+  padding-top: 1rem;
+}
+@media (min-width: 768px) {
+  #intro .static__wrapper p {
+    font-size: 1.25rem;
   }
 }

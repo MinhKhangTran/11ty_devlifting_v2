@@ -2,8 +2,7 @@
 
 #cta {
   padding-block: math.div(64rem, 16);
-  border-top: 2px solid $dark;
-  border-bottom: 2px solid $dark;
+  @include border;
   p {
     padding-block: 0.5rem 1rem;
     @include md {

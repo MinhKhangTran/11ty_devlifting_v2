@@ -1,0 +1,4 @@
+@mixin border() {
+  border-bottom: solid 2px $dark;
+  border-top: solid 2px $dark;
+}

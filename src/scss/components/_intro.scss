@@ -1,1 +1,26 @@
 @use "sass:math";
+
+#intro {
+  padding-top: math.div(88rem, 16);
+  @include md {
+    padding-top: math.div(102rem, 16);
+  }
+  .static__wrapper {
+    padding-block: math.div(80rem, 16);
+    @include border;
+    h2 {
+      font-size: math.div(36rem, 16);
+      @include md {
+        font-size: math.div(40rem, 16);
+      }
+    }
+    p {
+      font-size: math.div(18rem, 16);
+      line-height: 150%;
+      padding-top: 1rem;
+      @include md {
+        font-size: math.div(20rem, 16);
+      }
+    }
+  }
+}
