@@ -11393,6 +11393,12 @@ nav ul a {
   margin-inline: auto;
 }
 
+.md__wrapper {
+  width: 90%;
+  max-width: 1000px;
+  margin-inline: auto;
+}
+
 ::-webkit-scrollbar {
   height: 1rem;
 }
@@ -11484,14 +11490,14 @@ footer .copyright {
 }
 
 #process {
-  padding-block: 2rem;
+  padding-block: 3rem;
   margin-top: 5.5rem;
   border-bottom: 2px solid #402e32;
   border-top: 2px solid #402e32;
 }
 @media (min-width: 768px) {
   #process {
-    padding-block: 3rem;
+    padding-block: 5rem;
     margin-top: 6.375rem;
   }
 }

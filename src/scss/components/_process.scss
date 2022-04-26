@@ -1,12 +1,12 @@
 @use "sass:math";
 
 #process {
-  padding-block: math.div(32rem, 16);
+  padding-block: math.div(48rem, 16);
   margin-top: math.div(88rem, 16);
   border-bottom: 2px solid $dark;
   border-top: 2px solid $dark;
   @include md {
-    padding-block: math.div(48rem, 16);
+    padding-block: math.div(80rem, 16);
     margin-top: math.div(102rem, 16);
   }
   p {
