@@ -23,6 +23,12 @@ $headings-font-family: "Lato", -apple-system, BlinkMacSystemFont, "Segoe UI",
 //navbar
 $link-decoration: none;
 
+// carousel
+$carousel-indicator-width: 15px;
+$carousel-indicator-height: 15px;
+$carousel-indicator-hit-area-height: 15px;
+$carousel-indicator-active-bg: $dark;
+
 // import variables and mixins files (so you can use them below)
 // any redefined vars above will be incorporated into the files (e.g. in maps)
 @import "../../node_modules/bootstrap/scss/variables";

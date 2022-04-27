@@ -1,1 +1,79 @@
-<section id="social" aria-label="social section">social</section>
+<section id="social" class="bg-dark" aria-label="social section">
+  <div class="wrapper">
+    <div
+      id="carouselExampleIndicators"
+      class="carousel slide carousel-fade"
+      data-bs-ride="carousel"
+    >
+      <div class="carousel-indicators">
+        <button
+          type="button"
+          data-bs-target="#carouselExampleIndicators"
+          data-bs-slide-to="0"
+          class="active"
+          aria-current="true"
+          aria-label="Slide 1"
+        ></button>
+        <button
+          type="button"
+          data-bs-target="#carouselExampleIndicators"
+          data-bs-slide-to="1"
+          aria-label="Slide 2"
+        ></button>
+        <button
+          type="button"
+          data-bs-target="#carouselExampleIndicators"
+          data-bs-slide-to="2"
+          aria-label="Slide 3"
+        ></button>
+      </div>
+      <div class="carousel-inner">
+        <div class="carousel-item active bg-white" data-bs-interval="false">
+          <div class="testi__wrapper | d-flex bg-white align-items-center">
+            <img
+              src="/images/{{socials.social[0].social_img}}.jpg"
+              alt="{{socials.social[0].social_name}}"
+            />
+            <div>
+              <p class="body-lg text-dark">{{socials.social[0].social_text}}</p>
+              <h2 class="text-dark">{{socials.social[0].social_name}}</h2>
+              <p class="text-primary text-uppercase">
+                {{socials.social[0].social_job}}
+              </p>
+            </div>
+          </div>
+        </div>
+        <div class="carousel-item bg-white" data-bs-interval="false">
+          <div class="testi__wrapper | d-flex bg-white align-items-center">
+            <img
+              src="/images/{{socials.social[1].social_img}}.jpg"
+              alt="{{socials.social[1].social_name}}"
+            />
+            <div>
+              <p class="body-lg text-dark">{{socials.social[1].social_text}}</p>
+              <h2 class="text-dark">{{socials.social[1].social_name}}</h2>
+              <p class="text-primary text-uppercase">
+                {{socials.social[1].social_job}}
+              </p>
+            </div>
+          </div>
+        </div>
+        <div class="carousel-item bg-white" data-bs-interval="false">
+          <div class="testi__wrapper | d-flex bg-white align-items-center">
+            <img
+              src="/images/{{socials.social[2].social_img}}.jpg"
+              alt="{{socials.social[2].social_name}}"
+            />
+            <div>
+              <p class="body-lg text-dark">{{socials.social[2].social_text}}</p>
+              <h2 class="text-dark">{{socials.social[2].social_name}}</h2>
+              <p class="text-primary text-uppercase">
+                {{socials.social[2].social_job}}
+              </p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
