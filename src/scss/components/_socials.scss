@@ -1,0 +1,50 @@
+@use "sass:math";
+
+#socials {
+  padding-block: 5rem;
+
+  .carousel-indicators {
+    bottom: 15%;
+  }
+  .carousel-inner {
+    border-radius: 10px;
+    border: 2px solid #000000;
+    box-shadow: 3px 3px 0px #000000;
+    svg {
+      z-index: 2;
+      @include md {
+        left: 20%;
+        top: 15%;
+      }
+    }
+  }
+  .carousel-item {
+    padding-inline: 3rem;
+    padding-block: 4rem 8rem;
+    img {
+      width: 75px;
+      height: 75px;
+      position: relative;
+
+      @include sm {
+        width: 150px;
+        height: 150px;
+      }
+      @include md {
+        width: 250px;
+        height: 250px;
+      }
+    }
+  }
+  .testi__wrapper {
+    @include sm {
+      gap: 2rem;
+    }
+    @include md {
+      gap: 4.5rem;
+    }
+    h2 {
+      padding-block: 0.5rem;
+    }
+  }
+}
