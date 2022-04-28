@@ -139,27 +139,27 @@ collections:
         label: "intro1"
         file: "src/_data/intro1.json"
         fields:
-          - { name: "title", label: "title", widget: "string"}
-          - { name: "desc1", label: "desc1", widget: "string"}
-          - { name: "desc2", label: "desc2", widget: "string"}
-          - { name: "image", label: "image", widget: "string"}
+          - { name: "title", label: "title", widget: "string" }
+          - { name: "desc1", label: "desc1", widget: "string" }
+          - { name: "desc2", label: "desc2", widget: "string" }
+          - { name: "image", label: "image", widget: "string" }
           - name: "bulletpoints"
             label: "bulletpoints"
             widget: "list"
             fields:
-              - { name: "bulletpoint", label: "bulletpoint", widget: "string"}
+              - { name: "bulletpoint", label: "bulletpoint", widget: "string" }
       - name: "intro2"
         label: "intro2"
         file: "src/_data/intro2.json"
         fields:
-          - { name: "title", label: "title", widget: "string"}
-          - { name: "desc1", label: "desc1", widget: "string"}
-          - { name: "image", label: "image", widget: "string"}
+          - { name: "title", label: "title", widget: "string" }
+          - { name: "desc1", label: "desc1", widget: "string" }
+          - { name: "image", label: "image", widget: "string" }
           - name: "bulletpoints"
             label: "bulletpoints"
             widget: "list"
             fields:
-              - { name: "bulletpoint", label: "bulletpoint", widget: "string"}
+              - { name: "bulletpoint", label: "bulletpoint", widget: "string" }
   - name: "projekte"
     label: "Projekte"
     folder: "src/projekte"
@@ -170,6 +170,13 @@ collections:
       - { label: "Description", name: "description", widget: "string" }
       - { label: "Date", name: "date", widget: "datetime" }
       - { label: "Image", name: "img", widget: "image", required: true }
+      - {
+          label: "featured",
+          name: "featured",
+          widget: "boolean",
+          default: false,
+        }
+      - { label: "body", name: "body", widget: "markdown" }
   - name: "blogposts"
     label: "Blogposts"
     folder: "src/blogposts"
