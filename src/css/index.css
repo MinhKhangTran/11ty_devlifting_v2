@@ -11432,6 +11432,25 @@ nav ul a {
   box-shadow: 3px 3px 0px #000000;
 }
 
+#featuredWork {
+  padding-block: 5rem;
+}
+#featuredWork .card {
+  border: 2px solid #000000;
+  box-shadow: 3px 3px 0px #000000;
+  border-radius: 4px;
+}
+#featuredWork .card__2,
+#featuredWork .card__3 {
+  margin-top: 1.5rem;
+}
+@media (min-width: 992px) {
+  #featuredWork .card__2,
+#featuredWork .card__3 {
+    margin-top: 0;
+  }
+}
+
 #cta {
   padding-block: 4rem;
   border-bottom: solid 2px #402e32;
