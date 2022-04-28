@@ -28,21 +28,21 @@
         ></button>
       </div>
       <div class="carousel-inner">
-        <div class="carousel-item active bg-white" data-bs-interval="false">
+        {% for item in socials.social %}
+        <div
+          class="carousel-item {% if loop.index === 1 %}active{% endif %} bg-white"
+          data-bs-interval="false"
+        >
           <div class="testi__wrapper | bg-white">
             <img
               class="person"
-              src="/images/{{socials.social[0].social_img}}.jpg"
-              alt="{{socials.social[0].social_name}}"
+              src="/images/{{item.social_img}}.jpg"
+              alt="{{item.social_name}}"
             />
 
-            <p class="text | body-lg text-dark">
-              {{socials.social[0].social_text}}
-            </p>
-            <h2 class="name | text-dark">{{socials.social[0].social_name}}</h2>
-            <p class="job | text-primary text-uppercase">
-              {{socials.social[0].social_job}}
-            </p>
+            <p class="text | body-lg text-dark">{{item.social_text}}</p>
+            <h2 class="name | text-dark">{{item.social_name}}</h2>
+            <p class="job | text-primary text-uppercase">{{item.social_job}}</p>
           </div>
           <img
             class="quote | position-absolute"
@@ -50,36 +50,7 @@
             alt=""
           />
         </div>
-        <!-- <div class="carousel-item bg-white" data-bs-interval="false">
-          <div class="testi__wrapper | d-flex bg-white">
-            <img
-              src="/images/{{socials.social[1].social_img}}.jpg"
-              alt="{{socials.social[1].social_name}}"
-            />
-            <div>
-              <p class="body-lg text-dark">{{socials.social[1].social_text}}</p>
-              <h2 class="text-dark">{{socials.social[1].social_name}}</h2>
-              <p class="text-primary text-uppercase">
-                {{socials.social[1].social_job}}
-              </p>
-            </div>
-          </div>
-        </div>
-        <div class="carousel-item bg-white" data-bs-interval="false">
-          <div class="testi__wrapper | d-flex bg-white">
-            <img
-              src="/images/{{socials.social[2].social_img}}.jpg"
-              alt="{{socials.social[2].social_name}}"
-            />
-            <div>
-              <p class="body-lg text-dark">{{socials.social[2].social_text}}</p>
-              <h2 class="text-dark">{{socials.social[2].social_name}}</h2>
-              <p class="text-primary text-uppercase">
-                {{socials.social[2].social_job}}
-              </p>
-            </div>
-          </div>
-        </div> -->
+        {% endfor %}
       </div>
     </div>
   </div>
