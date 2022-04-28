@@ -1,3 +1,23 @@
-<section id="featuredWork" aria-label="featuredWork section">
-  featuredWork
+<section id="featuredWork" class="wrapper" aria-label="featuredWork section">
+  <div class="row">
+    {% for project in collections.featuredProject %}
+    <div class="col-lg-4">
+      <div class="card">
+        <img
+          src="{{project.data.img}}"
+          class="card-img-top"
+          alt="{{project.data.title}}"
+        />
+        <div class="card-body">
+          <h5 class="card-title">{{project.data.title}}</h5>
+          <p class="card-text">{{project.data.description}}</p>
+          <a href="{{project.url}}" class=""
+            >Read more
+            <span class="visually-hidden">about {{project.data.title}}</span></a
+          >
+        </div>
+      </div>
+    </div>
+    {% endfor %}
+  </div>
 </section>
