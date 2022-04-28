@@ -10,22 +10,29 @@
     border-radius: 10px;
     border: 2px solid #000000;
     box-shadow: 3px 3px 0px #000000;
-    svg {
-      z-index: 2;
+    .quote {
+      z-index: 0;
       @include md {
-        left: 20%;
-        top: 15%;
+        width: 100px;
+        left: 21%;
+        top: -8%;
       }
     }
   }
   .carousel-item {
-    padding-inline: 3rem;
-    padding-block: 4rem 8rem;
-    img {
+    padding-inline: 1.5rem;
+    padding-block: 2rem 8rem;
+    position: relative;
+    @include md {
+      padding-block: 4rem 8rem;
+      padding-inline: 3rem;
+    }
+    .person {
       width: 75px;
       height: 75px;
       position: relative;
-
+      z-index: 99;
+      border-radius: 200px;
       @include sm {
         width: 150px;
         height: 150px;
@@ -35,16 +42,66 @@
         height: 250px;
       }
     }
+    .quote {
+      z-index: 0;
+      width: 75px;
+      height: 75px;
+      left: 69%;
+      bottom: 19%;
+
+      @include md {
+        width: 100px;
+        height: 100px;
+        left: 35%;
+        top: 5%;
+      }
+      @include lg {
+        left: 21%;
+        top: 5%;
+      }
+    }
   }
   .testi__wrapper {
+    display: grid;
+    grid-template-areas:
+      "text text text"
+      "pic name ."
+      "pic job .";
+    row-gap: 1rem;
+    column-gap: 1rem;
     @include sm {
       gap: 2rem;
     }
     @include md {
-      gap: 4.5rem;
+      column-gap: 4.5rem;
+      row-gap: 0rem;
+      grid-template-areas:
+        "pic text text"
+        ". name ."
+        ". job .";
+    }
+    .text {
+      grid-area: text;
+    }
+    .name {
+      grid-area: name;
+    }
+    .job {
+      grid-area: job;
+    }
+
+    .person {
+      grid-area: pic;
     }
     h2 {
-      padding-block: 0.5rem;
+      @include lg {
+        padding-bottom: 0.5rem;
+        margin-top: 0rem;
+      }
+      @include xl {
+        padding-bottom: 0.5rem;
+        margin-top: -1rem;
+      }
     }
   }
 }

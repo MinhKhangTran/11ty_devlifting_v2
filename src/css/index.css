@@ -11609,35 +11609,72 @@ footer .copyright {
   border: 2px solid #000000;
   box-shadow: 3px 3px 0px #000000;
 }
-#socials .carousel-inner svg {
-  z-index: 2;
+#socials .carousel-inner .quote {
+  z-index: 0;
 }
 @media (min-width: 768px) {
-  #socials .carousel-inner svg {
-    left: 20%;
-    top: 15%;
+  #socials .carousel-inner .quote {
+    width: 100px;
+    left: 21%;
+    top: -8%;
   }
 }
 #socials .carousel-item {
-  padding-inline: 3rem;
-  padding-block: 4rem 8rem;
+  padding-inline: 1.5rem;
+  padding-block: 2rem 8rem;
+  position: relative;
 }
-#socials .carousel-item img {
+@media (min-width: 768px) {
+  #socials .carousel-item {
+    padding-block: 4rem 8rem;
+    padding-inline: 3rem;
+  }
+}
+#socials .carousel-item .person {
   width: 75px;
   height: 75px;
   position: relative;
+  z-index: 99;
+  border-radius: 200px;
 }
 @media (min-width: 576px) {
-  #socials .carousel-item img {
+  #socials .carousel-item .person {
     width: 150px;
     height: 150px;
   }
 }
 @media (min-width: 768px) {
-  #socials .carousel-item img {
+  #socials .carousel-item .person {
     width: 250px;
     height: 250px;
   }
+}
+#socials .carousel-item .quote {
+  z-index: 0;
+  width: 75px;
+  height: 75px;
+  left: 69%;
+  bottom: 19%;
+}
+@media (min-width: 768px) {
+  #socials .carousel-item .quote {
+    width: 100px;
+    height: 100px;
+    left: 35%;
+    top: 5%;
+  }
+}
+@media (min-width: 992px) {
+  #socials .carousel-item .quote {
+    left: 21%;
+    top: 5%;
+  }
+}
+#socials .testi__wrapper {
+  display: grid;
+  grid-template-areas: "text text text" "pic name ." "pic job .";
+  row-gap: 1rem;
+  column-gap: 1rem;
 }
 @media (min-width: 576px) {
   #socials .testi__wrapper {
@@ -11646,9 +11683,32 @@ footer .copyright {
 }
 @media (min-width: 768px) {
   #socials .testi__wrapper {
-    gap: 4.5rem;
+    column-gap: 4.5rem;
+    row-gap: 0rem;
+    grid-template-areas: "pic text text" ". name ." ". job .";
   }
 }
-#socials .testi__wrapper h2, #socials .testi__wrapper .h2 {
-  padding-block: 0.5rem;
+#socials .testi__wrapper .text {
+  grid-area: text;
+}
+#socials .testi__wrapper .name {
+  grid-area: name;
+}
+#socials .testi__wrapper .job {
+  grid-area: job;
+}
+#socials .testi__wrapper .person {
+  grid-area: pic;
+}
+@media (min-width: 992px) {
+  #socials .testi__wrapper h2, #socials .testi__wrapper .h2 {
+    padding-bottom: 0.5rem;
+    margin-top: 0rem;
+  }
+}
+@media (min-width: 1200px) {
+  #socials .testi__wrapper h2, #socials .testi__wrapper .h2 {
+    padding-bottom: 0.5rem;
+    margin-top: -1rem;
+  }
 }

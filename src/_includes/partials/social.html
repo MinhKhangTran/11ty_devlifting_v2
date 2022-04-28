@@ -29,21 +29,28 @@
       </div>
       <div class="carousel-inner">
         <div class="carousel-item active bg-white" data-bs-interval="false">
-          <div class="testi__wrapper | d-flex bg-white">
+          <div class="testi__wrapper | bg-white">
             <img
+              class="person"
               src="/images/{{socials.social[0].social_img}}.jpg"
               alt="{{socials.social[0].social_name}}"
             />
-            <div>
-              <p class="body-lg text-dark">{{socials.social[0].social_text}}</p>
-              <h2 class="text-dark">{{socials.social[0].social_name}}</h2>
-              <p class="text-primary text-uppercase">
-                {{socials.social[0].social_job}}
-              </p>
-            </div>
+
+            <p class="text | body-lg text-dark">
+              {{socials.social[0].social_text}}
+            </p>
+            <h2 class="name | text-dark">{{socials.social[0].social_name}}</h2>
+            <p class="job | text-primary text-uppercase">
+              {{socials.social[0].social_job}}
+            </p>
           </div>
+          <img
+            class="quote | position-absolute"
+            src="/images/quote.svg"
+            alt=""
+          />
         </div>
-        <div class="carousel-item bg-white" data-bs-interval="false">
+        <!-- <div class="carousel-item bg-white" data-bs-interval="false">
           <div class="testi__wrapper | d-flex bg-white">
             <img
               src="/images/{{socials.social[1].social_img}}.jpg"
@@ -72,7 +79,7 @@
               </p>
             </div>
           </div>
-        </div>
+        </div> -->
       </div>
     </div>
   </div>
