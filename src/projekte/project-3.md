@@ -5,6 +5,7 @@ description: "Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam
 date: 2022-04-25T03:49:48.621Z
 img: /images/project-3.jpg
 featured: true
+displayOrder: 3
 ---
 
 # h1 Heading 8-)
