@@ -1,3 +1,5 @@
+const sortByDisplayOrder = require("./src/utils/sort-by-display-order.js");
+
 module.exports = function (eleventyConfig) {
   eleventyConfig.addPassthroughCopy("./src/images");
   eleventyConfig.addPassthroughCopy("./src/css");
@@ -8,6 +10,13 @@ module.exports = function (eleventyConfig) {
   // add filter for the year
   eleventyConfig.addFilter("year", () => {
     return new Date().getFullYear();
+  });
+
+  // add featured projects to collection
+  eleventyConfig.addCollection("featuredProject", (collection) => {
+    return sortByDisplayOrder(
+      collection.getFilteredByGlob("./src/projekte/*.md")
+    ).filter((x) => x.data.featured);
   });
 
   return {

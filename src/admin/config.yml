@@ -176,7 +176,9 @@ collections:
           widget: "boolean",
           default: false,
         }
+      - { label: "displayOrder", name: "displayOrder", widget: "number" }
       - { label: "body", name: "body", widget: "markdown" }
+
   - name: "blogposts"
     label: "Blogposts"
     folder: "src/blogposts"
