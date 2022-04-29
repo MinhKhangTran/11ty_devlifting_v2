@@ -185,15 +185,11 @@ collections:
     create: true
     slug: "{{slug}}"
     fields:
-      - { label: "Card Heading", name: "card_heading", widget: "string" }
-      - { label: "Card Subheading", name: "card_sub", widget: "string" }
-      - { label: "Card Description", name: "card_desc", widget: "string" }
-      - {
-          label: "Card Image",
-          name: "card_img",
-          widget: "image",
-          required: true,
-        }
+      - { label: "Title", name: "title", widget: "string" }
+      - { label: "Description", name: "description", widget: "string" }
+      - { label: "Date", name: "date", widget: "datetime" }
+      - { label: "Image", name: "img", widget: "image", required: true }
+      - { label: "body", name: "body", widget: "markdown" }
   - label: "Pages"
     name: "pages"
     files:
