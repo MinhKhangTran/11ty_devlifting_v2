@@ -2,15 +2,15 @@
   "navigations": [
     {
       "url": "/about/",
-      "navigation": "about"
+      "navigation": "über mich"
     },
     {
       "url": "/projekte/",
       "navigation": "projekte"
     },
     {
-      "url": "/blog/",
-      "navigation": "blog"
+      "url": "/archiv/",
+      "navigation": "archiv"
     },
     {
       "url": "/kontakt/",
