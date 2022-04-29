@@ -1,3 +1,16 @@
 {% extends "layouts/base.html" %} {% block content %} {% if page_cta %} {% set
-ctaContent = page_cta %} {% endif %} {{content | safe}} {% include "partials/cta.html" %} {%
-endblock %}
+ctaContent = page_cta %} {% endif %}
+
+<section id="project__item" aria-label="project section" class="wrapper py-5">
+  <img src="{{img}}" alt="{{title}} Thumbnail" class="img-fluid w-100" />
+  <h1 class="heading-1 | text-dark pt-3">{{title}}</h1>
+  <div class="text-primary pb-3">
+    <time datetime="{{date | dateFilter}}">{{date | dateFilter}}</time>
+  </div>
+  {{content |safe}}
+</section>
+<div class="wrapper | mb-5">
+  <a href="/projekte" class="text-white | btn-main">Zurück zu den Projekten</a>
+</div>
+
+{% include "partials/cta.html" %} {% endblock %}

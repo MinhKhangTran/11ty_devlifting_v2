@@ -1,4 +1,14 @@
 ---
 layout: layouts/projekte.html
 title: Projekte
+header:
+  heading: "Projekte"
+  sub: "Landing Pages, Marketing Pages, Business Pages, Blogs und vieles mehr"
+pagination:
+  data: collections.projects
+  size: 3
+permalink: "projekte{% if pagination.pageNumber > 0 %}/page/{{ pagination.pageNumber }}{% endif %}/index.html"
+paginationPrevText: "Weitere Projekte"
+paginationNextText: "Weitere Projekte"
+paginationAnchor: "#project-list"
 ---

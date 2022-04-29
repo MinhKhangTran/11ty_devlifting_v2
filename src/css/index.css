@@ -11474,6 +11474,11 @@ nav ul a {
   }
 }
 
+#project__item time,
+#project__item a {
+  color: #98654c !important;
+}
+
 #cta {
   padding-block: 4rem;
   border-bottom: solid 2px #402e32;
@@ -11481,6 +11486,7 @@ nav ul a {
 }
 #cta p {
   padding-block: 0.5rem 1rem;
+  color: #bb8060 !important;
 }
 @media (min-width: 768px) {
   #cta p {
@@ -11529,6 +11535,35 @@ footer .copyright {
   padding-top: 1rem;
   margin-top: 2.5rem;
   border-top: 1px solid #a97155;
+}
+
+#projectList a:focus-within {
+  box-shadow: 0px 0px 0px #000000;
+  outline: #402e32 dashed 2px;
+  outline-offset: 0.25rem;
+}
+#projectList .card {
+  border: 2px solid #000000;
+  box-shadow: 3px 3px 0px #000000;
+  border-radius: 4px;
+  transition: box-shadow 0.25s ease-in-out;
+}
+#projectList .card:hover {
+  box-shadow: 0px 0px 0px #000000;
+}
+#projectList .card a {
+  transition: color 0.35s ease-in;
+}
+#projectList .card svg path {
+  transition: fill 0.35s ease-in;
+}
+#projectList .card a:hover,
+#projectList .card a:focus-visible {
+  color: #a97155 !important;
+}
+#projectList .card a:hover svg path,
+#projectList .card a:focus-visible svg path {
+  fill: #a97155 !important;
 }
 
 #process {
@@ -11738,6 +11773,7 @@ footer .copyright {
 }
 #socials .testi__wrapper .job {
   grid-area: job;
+  color: #98654c !important;
 }
 #socials .testi__wrapper .person {
   grid-area: pic;

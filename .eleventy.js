@@ -1,4 +1,6 @@
 const sortByDisplayOrder = require("./src/utils/sort-by-display-order.js");
+// Filters
+const dateFilter = require("./src/filters/date-filter.js");
 
 module.exports = function (eleventyConfig) {
   eleventyConfig.addPassthroughCopy("./src/images");
@@ -18,6 +20,14 @@ module.exports = function (eleventyConfig) {
       collection.getFilteredByGlob("./src/projekte/*.md")
     ).filter((x) => x.data.featured);
   });
+
+  // add works to collections
+  eleventyConfig.addCollection("projects", (collection) => {
+    return collection.getFilteredByGlob("./src/projekte/*.md").reverse();
+  });
+
+  // Add filters
+  eleventyConfig.addFilter("dateFilter", dateFilter);
 
   return {
     dir: {

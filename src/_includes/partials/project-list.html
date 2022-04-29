@@ -1,8 +1,8 @@
-<section id="featuredWork" class="wrapper" aria-label="featuredWork section">
+<section id="projectList" class="wrapper pb-2" aria-label="projectList section">
   <div class="row">
-    {% for project in collections.featuredProject %}
+    {% for project in projectListItems %}
     <div class="col-lg-4 col-md-6">
-      <div class="card card__{{loop.index}}">
+      <div class="card card__{{loop.index}} mb-4">
         <img
           src="{{project.data.img}}"
           class="card-img-top"
