@@ -336,6 +336,30 @@ collections:
               widget: "hidden",
               default: "layouts/blog.html",
             }
+          - label: "header"
+            name: "header"
+            widget: "object"
+            fields:
+              - { label: "heading", name: "heading", widget: "string" }
+              - { label: "sub", name: "sub", widget: "string" }
+          - label: "pagination"
+            name: "pagination"
+            widget: "object"
+            fields:
+              - { label: "data", name: "data", widget: "string" }
+              - { label: "size", name: "size", widget: "number" }
+          - { label: permalink, name: permalink, widget: string }
+          - {
+              label: paginationPrevText,
+              name: paginationPrevText,
+              widget: string,
+            }
+          - {
+              label: paginationNextText,
+              name: paginationNextText,
+              widget: string,
+            }
+          - { label: paginationAnchor, name: paginationAnchor, widget: string }
           - label: "Page Cta"
             name: "page_cta"
             widget: "object"
