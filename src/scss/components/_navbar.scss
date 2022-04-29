@@ -23,4 +23,10 @@ nav {
       }
     }
   }
+  .nav-link{
+    &[data-state="active"],
+    &[aria-current="page"] {
+      color: #98654c !important;
+    }
+  }
 }

@@ -9,10 +9,6 @@
       "navigation": "projekte"
     },
     {
-      "url": "/blog/",
-      "navigation": "blog"
-    },
-    {
       "url": "/kontakt/",
       "navigation": "kontakt"
     }

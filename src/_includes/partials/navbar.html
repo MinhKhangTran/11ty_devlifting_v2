@@ -11,7 +11,7 @@
     <ul class="d-flex pt-3 pt-md-0">
       {% for navigation in navbar.navigations %}
       <li class="text-capitalize">
-        <a class="text-dark" href="{{navigation.url}}">
+        <a class="text-dark" href="{{navigation.url}}" {{ helpers.getLinkActiveState(nav.url, page.url) | safe }}>
           {{navigation.navigation}}
         </a>
       </li>
