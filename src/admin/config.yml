@@ -233,6 +233,42 @@ collections:
                   required: false,
                   hint: "Standard CTA wird genommen",
                 }
+      - name: "about"
+        label: "About"
+        file: "src/about.html"
+        fields:
+          - {
+              label: Layout,
+              name: "layout",
+              widget: "hidden",
+              default: "layouts/about.html",
+            }
+          - { label: Title, name: title, widget: string }
+          - label: "Page Cta"
+            name: "page_cta"
+            widget: "object"
+            fields:
+              - {
+                  label: "Cta Heading",
+                  name: "cta_heading",
+                  widget: "string",
+                  required: false,
+                  hint: "Standard CTA wird genommen",
+                }
+              - {
+                  label: "Cta Subheading",
+                  name: "cta_sub",
+                  widget: "string",
+                  required: false,
+                  hint: "Standard CTA wird genommen",
+                }
+              - {
+                  label: "Cta Button",
+                  name: "cta_button",
+                  widget: "string",
+                  required: false,
+                  hint: "Standard CTA wird genommen",
+                }
       - name: "projekte"
         label: "projekte"
         file: "src/projekte.html"
@@ -244,6 +280,30 @@ collections:
               widget: "hidden",
               default: "layouts/projekte.html",
             }
+          - label: "header"
+            name: "header"
+            widget: "object"
+            fields:
+              - { label: "heading", name: "heading", widget: "string" }
+              - { label: "sub", name: "sub", widget: "string" }
+          - label: "pagination"
+            name: "pagination"
+            widget: "object"
+            fields:
+              - { label: "data", name: "data", widget: "string" }
+              - { label: "size", name: "size", widget: "number" }
+          - { label: permalink, name: permalink, widget: string }
+          - {
+              label: paginationPrevText,
+              name: paginationPrevText,
+              widget: string,
+            }
+          - {
+              label: paginationNextText,
+              name: paginationNextText,
+              widget: string,
+            }
+          - { label: paginationAnchor, name: paginationAnchor, widget: string }
           - label: "Page Cta"
             name: "page_cta"
             widget: "object"
