@@ -2,10 +2,34 @@
 
 #featuredWork {
   padding-block: math.div(80rem, 16);
+  a:focus-within {
+    box-shadow: 0px 0px 0px #000000;
+    outline: $dark dashed 2px;
+    outline-offset: 0.25rem;
+  }
   .card {
     border: 2px solid #000000;
     box-shadow: 3px 3px 0px #000000;
     border-radius: 4px;
+    transition: box-shadow 0.25s ease-in-out;
+    &:hover {
+      box-shadow: 0px 0px 0px #000000;
+    }
+
+    a {
+      transition: color 0.35s ease-in;
+    }
+    svg path {
+      transition: fill 0.35s ease-in;
+    }
+    a:hover,
+    a:focus-visible {
+      color: $primary !important;
+    }
+    a:hover svg path,
+    a:focus-visible svg path {
+      fill: $primary !important;
+    }
   }
   .card__2,
   .card__3 {

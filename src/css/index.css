@@ -11435,10 +11435,33 @@ nav ul a {
 #featuredWork {
   padding-block: 5rem;
 }
+#featuredWork a:focus-within {
+  box-shadow: 0px 0px 0px #000000;
+  outline: #402e32 dashed 2px;
+  outline-offset: 0.25rem;
+}
 #featuredWork .card {
   border: 2px solid #000000;
   box-shadow: 3px 3px 0px #000000;
   border-radius: 4px;
+  transition: box-shadow 0.25s ease-in-out;
+}
+#featuredWork .card:hover {
+  box-shadow: 0px 0px 0px #000000;
+}
+#featuredWork .card a {
+  transition: color 0.35s ease-in;
+}
+#featuredWork .card svg path {
+  transition: fill 0.35s ease-in;
+}
+#featuredWork .card a:hover,
+#featuredWork .card a:focus-visible {
+  color: #a97155 !important;
+}
+#featuredWork .card a:hover svg path,
+#featuredWork .card a:focus-visible svg path {
+  fill: #a97155 !important;
 }
 #featuredWork .card__2,
 #featuredWork .card__3 {

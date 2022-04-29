@@ -9,12 +9,37 @@
           alt="{{project.data.title}}"
         />
         <div class="card-body">
-          <h5 class="card-title">{{project.data.title}}</h5>
-          <p class="card-text">{{project.data.description}}</p>
-          <a href="{{project.url}}" class=""
+          <h5 class="card-title | mb-0 text-dark">{{project.data.title}}</h5>
+          <p class="card-text | py-2 text-dark">{{project.data.description}}</p>
+          <a
+            href="{{project.url}}"
+            class="text-dark text-decoration-underline | d-flex align-items-center gap-1"
             >Read more
-            <span class="visually-hidden">about {{project.data.title}}</span></a
-          >
+            <span class="visually-hidden">about {{project.data.title}}</span
+            ><svg
+              width="16"
+              height="16"
+              viewBox="0 0 16 16"
+              fill="none"
+              xmlns="http://www.w3.org/2000/svg"
+            >
+              <g clip-path="url(#clip0_18_180)">
+                <path
+                  d="M15.8599 4.65277L11.5265 0.152826C11.3852 0.00622088 11.1685 -0.0397991 10.9799 0.0361277C10.7906 0.112787 10.6666 0.296134 10.6666 0.500112V2.66683H10.4999C6.91599 2.66683 4 5.58282 4 9.16676V10.1667C4 10.3987 4.16333 10.592 4.38928 10.6448C4.42602 10.654 4.46264 10.6581 4.49926 10.6581C4.68798 10.6581 4.86864 10.5474 4.95592 10.3734C5.89329 8.49806 7.77792 7.3334 9.87457 7.3334H10.6666V9.5C10.6666 9.7041 10.7906 9.88745 10.9799 9.96338C11.1673 10.04 11.3852 9.99341 11.5265 9.84668L15.8599 5.34673C16.0465 5.15277 16.0465 4.84747 15.8599 4.65277Z"
+                  fill="#402E32"
+                />
+                <path
+                  d="M13.9998 16.0001H1.99998C0.897328 16.0001 0 15.1029 0 14.0001V4.66697C0 3.56432 0.897328 2.66699 1.99998 2.66699H3.99995C4.3686 2.66699 4.66657 2.96496 4.66657 3.33361C4.66657 3.70226 4.3686 4.00023 3.99995 4.00023H1.99998C1.63194 4.00023 1.33324 4.29893 1.33324 4.66697V14.0001C1.33324 14.3682 1.63194 14.6669 1.99998 14.6669H13.9998C14.3678 14.6669 14.6665 14.3682 14.6665 14.0001V8.66693C14.6665 8.29828 14.9644 8.00019 15.3331 8.00019C15.7018 8.00019 15.9998 8.29828 15.9998 8.66693V14.0001C15.9998 15.1029 15.1025 16.0001 13.9998 16.0001Z"
+                  fill="#402E32"
+                />
+              </g>
+              <defs>
+                <clipPath id="clip0_18_180">
+                  <rect width="16" height="16" fill="white" />
+                </clipPath>
+              </defs>
+            </svg>
+          </a>
         </div>
       </div>
     </div>
