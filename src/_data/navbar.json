@@ -1,6 +1,10 @@
 {
   "navigations": [
     {
+      "url": "/about/",
+      "navigation": "about"
+    },
+    {
       "url": "/projekte/",
       "navigation": "projekte"
     },
