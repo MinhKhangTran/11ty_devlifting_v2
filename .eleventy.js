@@ -21,10 +21,15 @@ module.exports = function (eleventyConfig) {
     ).filter((x) => x.data.featured);
   });
 
-  // add works to collections
+  // add projects to collections
   eleventyConfig.addCollection("projects", (collection) => {
     return collection.getFilteredByGlob("./src/projekte/*.md").reverse();
   });
+
+    // add blogposts to collections
+    eleventyConfig.addCollection("blogposts", (collection) => {
+      return collection.getFilteredByGlob("./src/blogposts/*.md").reverse();
+    });
 
   // Add filters
   eleventyConfig.addFilter("dateFilter", dateFilter);

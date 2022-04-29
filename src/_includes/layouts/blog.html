@@ -1,3 +1,16 @@
-{% extends "layouts/base.html" %} {% block content %} {% if page_cta %} {% set
-ctaContent = page_cta %} {% endif %} {% include "partials/cta.html" %} {%
-endblock %}
+{% extends "layouts/base.html" %} {% set projectListItems = pagination.items %} {% block content %} {% if page_cta %} {% set
+ctaContent = page_cta %} {% endif %} 
+
+
+
+<section
+  id="blogPage"
+  aria-label="blog page section"
+  class="wrapper pt-lg-5 pt-3 pb-3"
+>
+  <h1 class="heading-1 text-dark">{{header.heading}}</h1>
+  <p class="body-lg text-dark">{{header.sub}}</p>
+</section>
+
+{% include "partials/project-list.html" %} {% include "partials/pagination.html"
+%} {% include "partials/cta.html" %} {% endblock %}

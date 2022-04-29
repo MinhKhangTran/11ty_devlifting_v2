@@ -7,12 +7,12 @@
       "navigation": "home"
     },
     {
-      "url": "/projekte/",
-      "navigation": "projekte"
+      "url": "/about/",
+      "navigation": "about"
     },
     {
-      "navigation": "blog",
-      "url": "/blog/"
+      "url": "/projekte/",
+      "navigation": "projekte"
     },
     {
       "url": "/kontakt/",

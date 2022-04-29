@@ -1,4 +1,14 @@
 ---
 layout: layouts/blog.html
 title: Blog
+header:
+  heading: "Blog"
+  sub: "Diese Seite ist geheim bzw. ein Platzhalter. Ich habe noch keine Blogposts und bin zu faul dafür."
+pagination:
+  data: collections.blogposts
+  size: 3
+permalink: "blog{% if pagination.pageNumber > 0 %}/page/{{ pagination.pageNumber }}{% endif %}/index.html"
+paginationPrevText: "Weitere Blogposts"
+paginationNextText: "Weitere Blogposts"
+paginationAnchor: "#blog-list"
 ---
