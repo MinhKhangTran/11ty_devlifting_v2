@@ -21,12 +21,12 @@ nav {
       @include md {
         font-size: math.div(24rem, 16);
       }
-    }
-  }
-  .nav-link{
-    &[data-state="active"],
-    &[aria-current="page"] {
+      &[data-state="active"],
+      &[aria-current="page"] {
       color: #98654c !important;
     }
+    }
   }
+    
+  
 }
