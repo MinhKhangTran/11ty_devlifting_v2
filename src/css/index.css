@@ -11334,6 +11334,9 @@ nav ul a {
     font-size: 1.5rem;
   }
 }
+nav ul a[data-state=active], nav ul a[aria-current=page] {
+  color: #98654c !important;
+}
 
 #hero {
   padding-top: 4rem;

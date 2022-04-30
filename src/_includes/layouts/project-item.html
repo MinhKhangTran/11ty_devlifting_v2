@@ -9,8 +9,13 @@ ctaContent = page_cta %} {% endif %}
   </div>
   {{content |safe}}
 </section>
+
+{% if page.url.startsWith("/projekte") %}
 <div class="wrapper | mb-5">
   <a href="/projekte" class="text-white | btn-main">Zurück zu den Projekten</a>
 </div>
-
-{% include "partials/cta.html" %} {% endblock %}
+{% elif page.url.startsWith("/blogposts") %}
+<div class="wrapper | mb-5">
+  <a href="/blog" class="text-white | btn-main">Zurück zu den Blogposts</a>
+</div>
+{% endif %} {% include "partials/cta.html" %} {% endblock %}
