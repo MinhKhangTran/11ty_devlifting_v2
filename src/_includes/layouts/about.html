@@ -1,3 +1,6 @@
 {% extends "layouts/base.html" %} {% block content %} {% if page_cta %} {% set
-ctaContent = page_cta %} {% endif %} {% include "partials/cta.html" %} {%
-endblock %}
+ctaContent = page_cta %} {% endif %}
+
+<section id="about" aria-label="about"></section>
+
+{% include "partials/cta.html" %} {% endblock %}
