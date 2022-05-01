@@ -240,6 +240,17 @@ collections:
               default: "layouts/about.html",
             }
           - { label: Title, name: title, widget: string }
+          - { label: heading, name: heading, widget: string }
+          - { label: desc, name: desc, widget: string }
+          - { label: heading2, name: heading2, widget: string }
+          - { label: desc2, name: desc2, widget: string }
+          - { label: desc3, name: desc3, widget: string }
+          - {
+              label: "about_img",
+              name: "about_img",
+              widget: "image",
+              required: true,
+            }
           - label: "Page Cta"
             name: "page_cta"
             widget: "object"
@@ -395,4 +406,31 @@ collections:
               name: "layout",
               widget: "hidden",
               default: "layouts/kontakt.html",
+            }
+          - { label: heading, name: heading, widget: string }
+          - { label: desc, name: desc, widget: string }
+          - {
+              label: "contact_img",
+              name: "contact_img",
+              widget: "image",
+              required: true,
+            }
+      - name: "404"
+        label: "404"
+        file: "src/404.html"
+        fields:
+          - { label: Title, name: title, widget: string, default: "kontakt" }
+          - {
+              label: permalink,
+              name: "permalink",
+              widget: "string",
+              default: "404.html",
+            }
+          - { label: heading, name: heading, widget: string }
+          - { label: desc, name: desc, widget: string }
+          - {
+              label: "404_img",
+              name: "404_img",
+              widget: "image",
+              required: true,
             }
