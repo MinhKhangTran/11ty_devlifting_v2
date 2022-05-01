@@ -11793,3 +11793,15 @@ footer .copyright {
     margin-top: -1rem;
   }
 }
+
+#contact p {
+  margin-block: 0.5rem 1rem;
+}
+#contact a {
+  font-size: 1.75rem;
+  text-decoration: underline;
+  transition: all 0.35s ease-in;
+}
+#contact a:hover {
+  color: #a97155 !important;
+}

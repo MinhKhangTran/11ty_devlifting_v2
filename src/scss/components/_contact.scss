@@ -1,0 +1,15 @@
+@use "sass:math";
+
+#contact {
+  p {
+    margin-block: 0.5rem 1rem;
+  }
+  a {
+    font-size: math.div(28rem, 16);
+    text-decoration: underline;
+    transition: all 0.35s ease-in;
+    &:hover {
+      color: $primary !important;
+    }
+  }
+}

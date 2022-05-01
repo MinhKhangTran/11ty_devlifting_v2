@@ -1,6 +1,27 @@
 {% extends "layouts/base.html" %} {% block content %} {% if page_cta %} {% set
 ctaContent = page_cta %} {% endif %}
 
-<section id="about" aria-label="about"></section>
+<section
+  id="about"
+  aria-label="about"
+  class="wrapper py-lg-5 my-lg-4 py-3 my-3"
+>
+  <div class="row">
+    <div class="col-lg-6">
+      <h1 class="heading-1 | text-primary">{{heading}}</h1>
+      <p class="body-lg">{{desc}}</p>
+      <h2 class="heading-2 | text-primary mt-3">{{heading2}}</h2>
+      <p class="body-lg">{{desc2}}</p>
+      <p class="body-lg">{{desc3}}</p>
+    </div>
+    <div class="col-lg-6">
+      <img
+        src="{{about_img}}"
+        alt="Ein Bild von Minh Khang Tran"
+        class="img-fluid"
+      />
+    </div>
+  </div>
+</section>
 
 {% include "partials/cta.html" %} {% endblock %}
