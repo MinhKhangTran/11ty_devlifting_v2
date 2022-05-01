@@ -409,12 +409,7 @@ collections:
             }
           - { label: heading, name: heading, widget: string }
           - { label: desc, name: desc, widget: string }
-          - {
-              label: "contact_img",
-              name: "contact_img",
-              widget: "image",
-              required: true,
-            }
+          - { label: "contact_img", name: "contact_img", widget: "string" }
       - name: "404"
         label: "404"
         file: "src/404.html"
@@ -428,9 +423,4 @@ collections:
             }
           - { label: heading, name: heading, widget: string }
           - { label: desc, name: desc, widget: string }
-          - {
-              label: "404_img",
-              name: "404_img",
-              widget: "image",
-              required: true,
-            }
+          - { label: "404_img", name: "404_img", widget: "string" }
