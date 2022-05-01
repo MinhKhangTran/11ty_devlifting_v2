@@ -245,7 +245,12 @@ collections:
           - { label: heading2, name: heading2, widget: string }
           - { label: desc2, name: desc2, widget: string }
           - { label: desc3, name: desc3, widget: string }
-          - { label: "about_img", name: "about_img", widget: "string" }
+          - {
+              label: "about_img",
+              name: "about_img",
+              widget: "image",
+              required: true,
+            }
           - label: "Page Cta"
             name: "page_cta"
             widget: "object"
