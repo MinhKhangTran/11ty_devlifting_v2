@@ -5,10 +5,6 @@
       "navigation": "über mich"
     },
     {
-      "url": "/projekte/",
-      "navigation": "projekte"
-    },
-    {
       "url": "/kontakt/",
       "navigation": "kontakt"
     }
