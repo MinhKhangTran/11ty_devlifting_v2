@@ -11,10 +11,6 @@
       "navigation": "about"
     },
     {
-      "url": "/projekte/",
-      "navigation": "projekte"
-    },
-    {
       "url": "/kontakt/",
       "navigation": "kontakt"
     }
