@@ -8,7 +8,7 @@
     },
     {
       "url": "/about/",
-      "navigation": "about"
+      "navigation": "über mich"
     },
     {
       "url": "/kontakt/",
@@ -29,10 +29,6 @@
     {
       "url": "https://github.com/MinhKhangTran",
       "navigation": "github"
-    },
-    {
-      "url": "https://twitter.com/devLifting_",
-      "navigation": "twitter"
     }
   ]
 }
