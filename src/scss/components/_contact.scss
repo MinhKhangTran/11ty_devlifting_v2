@@ -1,6 +1,13 @@
 @use "sass:math";
 
 #contact {
+  .heading-1 {
+    font-size: math.div(28rem, 16);
+    font-weight: 700;
+    @include md {
+      font-size: math.div(48rem, 16);
+    }
+  }
   p {
     margin-block: 0.5rem 1rem;
   }

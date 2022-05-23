@@ -5,7 +5,7 @@
 
     {% for step in process.steps %} {% set gerade = loop.index % 2 == 0 %}
     <article
-      class="step step__{{loop.index}} | d-md-flex align-items-center {% if gerade %}flex-md-row-reverse{% else %}flex-md-row{% endif %}"
+      class="step step__{{loop.index}} | d-md-flex gap-5 mt-lg-5 align-items-center {% if gerade %}flex-md-row-reverse{% else %}flex-md-row{% endif %}"
     >
       <div class="left__panel">
         <h3 class="heading-3 text-dark text-uppercase">
@@ -38,7 +38,7 @@
       <div class="right__panel | d-flex justify-content-center">
         <img
           class="img-fluid {% if gerade %}me-md-auto{% else %}ms-md-auto{% endif %}"
-          src="/images/{{step.image}}.svg"
+          src="/images/{{step.image}}.png"
           alt="{{step.benefit_title}} bild"
         />
       </div>

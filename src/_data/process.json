@@ -3,8 +3,8 @@
   "desc": "Der Prozess der Erstellung und des Hostings einer Website von Grund auf ist schwierig und zeitaufwendig. ",
   "steps": [
     {
-      "image": "design",
-      "benefit_title": "individuelles design",
+      "image": "Design",
+      "benefit_title": "Dialog & Design",
       "bulletpoints": [
         {
           "bulletpoint": "Planung und Umsetzung Ihrer Ziele für die Website"
@@ -18,8 +18,8 @@
       ]
     },
     {
-      "image": "develop",
-      "benefit_title": "entwicklung",
+      "image": "Development",
+      "benefit_title": "Development",
       "bulletpoints": [
         {
           "bulletpoint": "Umsetzung von Design-Mockups mit HTML/CSS und Javascript"
@@ -33,8 +33,8 @@
       ]
     },
     {
-      "benefit_title": "veröffentlichen",
-      "image": "deploy",
+      "benefit_title": "Deployment",
+      "image": "Deployment",
       "bulletpoints": [
         {
           "bulletpoint": "Testen der Zugänglichkeit und Überprüfen des Designs"

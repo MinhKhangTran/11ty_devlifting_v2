@@ -11482,6 +11482,19 @@ nav ul a[data-state=active], nav ul a[aria-current=page] {
   color: #98654c !important;
 }
 
+#about .text-primary {
+  color: #98654c !important;
+}
+#about .heading-1 {
+  font-size: 1.75rem;
+  font-weight: 700;
+}
+@media (min-width: 768px) {
+  #about .heading-1 {
+    font-size: 3rem;
+  }
+}
+
 #cta {
   padding-block: 4rem;
   border-bottom: solid 2px #402e32;
@@ -11794,6 +11807,15 @@ footer .copyright {
   }
 }
 
+#contact .heading-1 {
+  font-size: 1.75rem;
+  font-weight: 700;
+}
+@media (min-width: 768px) {
+  #contact .heading-1 {
+    font-size: 3rem;
+  }
+}
 #contact p {
   margin-block: 0.5rem 1rem;
 }
