@@ -4,10 +4,7 @@
       "url": "/about/",
       "navigation": "über mich"
     },
-    {
-      "url": "/wiki/",
-      "navigation": "wiki"
-    },
+
     {
       "url": "/kontakt/",
       "navigation": "kontakt"

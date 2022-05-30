@@ -10,10 +10,7 @@
       "url": "/about/",
       "navigation": "über mich"
     },
-    {
-      "url": "/wiki/",
-      "navigation": "Wiki"
-    },
+
     {
       "url": "/kontakt/",
       "navigation": "kontakt"
