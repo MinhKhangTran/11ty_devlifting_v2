@@ -11223,7 +11223,7 @@ ul {
 }
 @media (min-width: 768px) {
   .heading-1 {
-    font-size: 4.5rem;
+    font-size: 3rem;
   }
 }
 
@@ -11315,7 +11315,7 @@ nav img {
 }
 @media (min-width: 768px) {
   nav img {
-    height: 32px;
+    height: 24px;
   }
 }
 nav ul {
@@ -11339,11 +11339,16 @@ nav ul a[data-state=active], nav ul a[aria-current=page] {
 }
 
 #hero {
-  padding-top: 4rem;
+  min-height: calc(100vh - 98px);
 }
 @media (min-width: 768px) {
   #hero {
-    padding-top: 6.375rem;
+    min-height: calc(100vh - 60px);
+  }
+}
+@media (min-width: 768px) {
+  #hero h1, #hero .h1 {
+    width: 50%;
   }
 }
 #hero p {
@@ -11352,6 +11357,23 @@ nav ul a[data-state=active], nav ul a[aria-current=page] {
 @media (min-width: 768px) {
   #hero p {
     padding-block: 1.5rem 2rem;
+    width: 50%;
+  }
+}
+#hero .button__group {
+  gap: 1.5rem;
+}
+@media (min-width: 768px) {
+  #hero .button__group {
+    gap: 2rem;
+  }
+}
+#hero .button__group a {
+  margin-inline: auto;
+}
+@media (min-width: 576px) {
+  #hero .button__group a {
+    margin-inline: initial;
   }
 }
 
@@ -11379,6 +11401,35 @@ nav ul a[data-state=active], nav ul a[aria-current=page] {
 }
 
 .btn-main:focus-within {
+  box-shadow: 0px 0px 0px #000000;
+  outline: #402e32 dashed 2px;
+  outline-offset: 0.25rem;
+}
+
+.btn-second {
+  border-radius: 4px;
+  padding-inline: 1rem;
+  padding-block: 0.5rem;
+  border: 2px solid #402e32;
+  box-shadow: 3px 3px 0px #000000;
+  transition: box-shadow 0.35s ease-in-out;
+  font-size: 1rem;
+  font-weight: 600;
+  background-color: transparent;
+}
+@media (min-width: 768px) {
+  .btn-second {
+    font-size: 1.25rem;
+    padding-inline: 1.25rem;
+    padding-block: 0.625rem;
+  }
+}
+
+.btn-second:hover {
+  box-shadow: 0px 0px 0px #000000;
+}
+
+.btn-second:focus-within {
   box-shadow: 0px 0px 0px #000000;
   outline: #402e32 dashed 2px;
   outline-offset: 0.25rem;
@@ -11417,8 +11468,12 @@ nav ul a[data-state=active], nav ul a[aria-current=page] {
   border-radius: 0.25rem;
 }
 
+.feat__wrapper {
+  border-top: solid 2px #402e32;
+}
+
 #feat {
-  padding-top: 5.5rem;
+  padding-block: 2rem;
 }
 #feat .row {
   gap: 2.5rem;
@@ -11607,7 +11662,7 @@ footer .copyright {
 @media (min-width: 768px) {
   #process .step__2,
 #process .step__3 {
-    padding-top: 2rem;
+    padding-top: 3rem;
   }
 }
 @media (min-width: 768px) {

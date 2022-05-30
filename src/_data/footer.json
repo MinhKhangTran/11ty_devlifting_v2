@@ -11,6 +11,10 @@
       "navigation": "über mich"
     },
     {
+      "url": "/wiki/",
+      "navigation": "Wiki"
+    },
+    {
       "url": "/kontakt/",
       "navigation": "kontakt"
     }
@@ -26,6 +30,10 @@
     }
   ],
   "socials": [
+    {
+      "url": "https://www.xing.com/profile/MinhKhang_Tran/cv",
+      "navigation": "xing"
+    },
     {
       "url": "https://github.com/MinhKhangTran",
       "navigation": "github"

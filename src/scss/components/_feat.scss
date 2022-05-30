@@ -1,7 +1,11 @@
 @use "sass:math";
 
+.feat__wrapper {
+  border-top: solid 2px $dark;
+}
 #feat {
-  padding-top: math.div(88rem, 16);
+  padding-block: 2rem;
+
   .row {
     gap: math.div(40rem, 16);
     @include md {

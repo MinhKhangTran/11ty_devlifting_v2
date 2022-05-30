@@ -24,3 +24,28 @@
   outline: $dark dashed 2px;
   outline-offset: 0.25rem;
 }
+
+.btn-second {
+  border-radius: 4px;
+  padding-inline: 1rem;
+  padding-block: 0.5rem;
+  border: 2px solid $dark;
+  box-shadow: 3px 3px 0px #000000;
+  transition: box-shadow 0.35s ease-in-out;
+  font-size: 1rem;
+  font-weight: 600;
+  background-color: transparent;
+  @include md {
+    font-size: math.div(20rem, 16);
+    padding-inline: math.div(20rem, 16);
+    padding-block: math.div(10rem, 16);
+  }
+}
+.btn-second:hover {
+  box-shadow: 0px 0px 0px #000000;
+}
+.btn-second:focus-within {
+  box-shadow: 0px 0px 0px #000000;
+  outline: $dark dashed 2px;
+  outline-offset: 0.25rem;
+}

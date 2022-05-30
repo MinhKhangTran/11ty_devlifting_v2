@@ -1,7 +1,17 @@
-<section id="hero" class="sm__wrapper" aria-label="hero section">
-  <h1 class="heading-1 text-dark text-center">{{hero.hero_heading}}</h1>
-  <p class="text-dark body-lg text-center">{{hero.hero_sub}}</p>
-  <div class="d-flex justify-content-center">
-    <a href="/#intro" class="text-white | btn-main">{{hero.hero_btn}}</a>
+<section
+  id="hero"
+  class="wrapper | d-flex flex-column flex-md-row align-items-center"
+  aria-label="hero section"
+>
+  <div class="hero__left--panel">
+    <h1 class="heading-1 text-dark">{{hero.hero_heading}}</h1>
+    <p class="text-dark body-lg">{{hero.hero_sub}}</p>
+    <div class="d-flex flex-column flex-sm-row | button__group">
+      <a href="/kontakt" class="text-white | btn-main">{{hero.hero_btn}}</a>
+      <a href="/#feat" class="text-dark | btn-second"
+        >{{hero.hero_second_btn}}</a
+      >
+    </div>
   </div>
+  <div class="hero__right--panel">hi</div>
 </section>

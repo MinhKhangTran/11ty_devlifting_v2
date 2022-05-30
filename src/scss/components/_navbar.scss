@@ -8,7 +8,7 @@ nav {
   img {
     height: 18px;
     @include md {
-      height: 32px;
+      height: 24px;
     }
   }
   ul {
@@ -23,10 +23,8 @@ nav {
       }
       &[data-state="active"],
       &[aria-current="page"] {
-      color: #98654c !important;
-    }
+        color: #98654c !important;
+      }
     }
   }
-    
-  
 }
