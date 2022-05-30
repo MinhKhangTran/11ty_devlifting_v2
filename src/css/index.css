@@ -11338,13 +11338,32 @@ nav ul a[data-state=active], nav ul a[aria-current=page] {
   color: #98654c !important;
 }
 
+.hero__wrapper {
+  overflow: hidden;
+}
+@media (min-width: 992px) {
+  .hero__wrapper {
+    position: relative;
+  }
+}
+
 #hero {
   min-height: calc(100vh - 98px);
+  justify-content: center;
+}
+@media (min-width: 576px) {
+  #hero {
+    max-height: calc(100vh - 98px);
+    justify-content: normal;
+  }
 }
 @media (min-width: 768px) {
   #hero {
     min-height: calc(100vh - 60px);
   }
+}
+#hero h1, #hero .h1 {
+  width: 100%;
 }
 @media (min-width: 768px) {
   #hero h1, #hero .h1 {
@@ -11352,9 +11371,10 @@ nav ul a[data-state=active], nav ul a[aria-current=page] {
   }
 }
 #hero p {
+  width: 100%;
   padding-block: 1rem 1.5rem;
 }
-@media (min-width: 768px) {
+@media (min-width: 992px) {
   #hero p {
     padding-block: 1.5rem 2rem;
     width: 50%;
@@ -11375,6 +11395,30 @@ nav ul a[data-state=active], nav ul a[aria-current=page] {
   #hero .button__group a {
     margin-inline: initial;
   }
+}
+#hero .hero__right--panel {
+  transform: rotate(22deg);
+  margin-top: 9rem;
+}
+@media (min-width: 992px) {
+  #hero .hero__right--panel {
+    position: absolute;
+    margin-top: 0rem;
+    top: -15%;
+    left: 65%;
+  }
+}
+@media (min-width: 1200px) {
+  #hero .hero__right--panel {
+    left: 53%;
+  }
+}
+#hero .second__row {
+  gap: 2rem;
+  margin-block: 3rem;
+}
+#hero .third__row {
+  gap: 2rem;
 }
 
 .btn-main {

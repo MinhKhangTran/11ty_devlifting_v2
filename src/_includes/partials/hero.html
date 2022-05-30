@@ -1,17 +1,45 @@
-<section
-  id="hero"
-  class="wrapper | d-flex flex-column flex-md-row align-items-center"
-  aria-label="hero section"
->
-  <div class="hero__left--panel">
-    <h1 class="heading-1 text-dark">{{hero.hero_heading}}</h1>
-    <p class="text-dark body-lg">{{hero.hero_sub}}</p>
-    <div class="d-flex flex-column flex-sm-row | button__group">
-      <a href="/kontakt" class="text-white | btn-main">{{hero.hero_btn}}</a>
-      <a href="/#feat" class="text-dark | btn-second"
-        >{{hero.hero_second_btn}}</a
-      >
+<div class="hero__wrapper |">
+  <section
+    id="hero"
+    class="wrapper | d-flex flex-column flex-lg-row align-items-center"
+    aria-label="hero section"
+  >
+    <div class="hero__left--panel">
+      <h1 class="heading-1 text-dark">{{hero.hero_heading}}</h1>
+      <p class="text-dark body-lg">{{hero.hero_sub}}</p>
+      <div class="d-flex flex-column flex-sm-row | button__group">
+        <a href="/kontakt" class="text-white | btn-main">{{hero.hero_btn}}</a>
+        <a href="/#feat" class="text-dark | btn-second"
+          >{{hero.hero_second_btn}}</a
+        >
+      </div>
     </div>
-  </div>
-  <div class="hero__right--panel">hi</div>
-</section>
+    <div class="hero__right--panel d-none d-md-inline">
+      <div class="hero__image--wrapper">
+        <div class="first__row |">
+          <img
+            src="/images/LPE.png"
+            class="d-none d-lg-inline"
+            width="554"
+            height="394"
+            alt="LPE"
+          />
+        </div>
+        <div class="second__row | d-flex">
+          <img src="/images/Moony.png" width="286" height="436" alt="Moony" />
+          <img src="/images/Midang.png" width="554" height="394" alt="Midang" />
+        </div>
+        <div class="third__row | d-flex">
+          <img src="/images/MT.png" width="144" height="312" alt="MT" />
+          <img
+            src="/images/The Handwerker.png"
+            width="286"
+            height="436"
+            alt="Handwerker"
+          />
+          <img src="/images/Gym.png" width="554" height="394" alt="Gym" />
+        </div>
+      </div>
+    </div>
+  </section>
+</div>

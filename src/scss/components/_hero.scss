@@ -1,19 +1,31 @@
 @use "sass:math";
 
+.hero__wrapper {
+  overflow: hidden;
+  @include lg {
+    position: relative;
+  }
+}
 #hero {
   min-height: calc(100vh - 98px);
-
+  justify-content: center;
+  @include sm {
+    max-height: calc(100vh - 98px);
+    justify-content: normal;
+  }
   @include md {
     min-height: calc(100vh - 60px);
   }
   h1 {
+    width: 100%;
     @include md {
       width: 50%;
     }
   }
   p {
+    width: 100%;
     padding-block: 1rem 1.5rem;
-    @include md {
+    @include lg {
       padding-block: 1.5rem 2rem;
       width: 50%;
     }
@@ -30,5 +42,25 @@
         margin-inline: initial;
       }
     }
+  }
+  .hero__right--panel {
+    transform: rotate(22deg);
+    margin-top: 9rem;
+    @include lg {
+      position: absolute;
+      margin-top: 0rem;
+      top: -15%;
+      left: 65%;
+    }
+    @include xl {
+      left: 53%;
+    }
+  }
+  .second__row {
+    gap: 2rem;
+    margin-block: 3rem;
+  }
+  .third__row {
+    gap: 2rem;
   }
 }
