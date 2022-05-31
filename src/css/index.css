@@ -11364,8 +11364,14 @@ nav ul a[data-state=active], nav ul a[aria-current=page] {
 }
 #hero h1, #hero .h1 {
   width: 100%;
+  text-align: center;
 }
-@media (min-width: 768px) {
+@media (min-width: 576px) {
+  #hero h1, #hero .h1 {
+    text-align: start;
+  }
+}
+@media (min-width: 992px) {
   #hero h1, #hero .h1 {
     width: 50%;
   }
@@ -11373,6 +11379,12 @@ nav ul a[data-state=active], nav ul a[aria-current=page] {
 #hero p {
   width: 100%;
   padding-block: 1rem 1.5rem;
+  text-align: center;
+}
+@media (min-width: 576px) {
+  #hero p {
+    text-align: start;
+  }
 }
 @media (min-width: 992px) {
   #hero p {
@@ -11397,7 +11409,8 @@ nav ul a[data-state=active], nav ul a[aria-current=page] {
   }
 }
 #hero .hero__right--panel {
-  transform: rotate(22deg);
+  transform: translate3d(0px, 0px, 0px) scale3d(1, 1, 1) rotateX(10deg) rotateY(0deg) rotateZ(22deg) skew(0deg, 0deg);
+  transform-style: preserve-3d;
   margin-top: 9rem;
 }
 @media (min-width: 992px) {
@@ -11413,14 +11426,34 @@ nav ul a[data-state=active], nav ul a[aria-current=page] {
     left: 53%;
   }
 }
-#hero .second__row {
+#hero .hero__right--panel .first__row {
+  animation: flowIn 3s cubic-bezier(0.33, 1, 0.68, 1);
+}
+#hero .hero__right--panel .second__row {
   gap: 2rem;
   margin-block: 3rem;
+  animation: flowIn 3.5s cubic-bezier(0.33, 1, 0.68, 1);
 }
-#hero .third__row {
+#hero .hero__right--panel .third__row {
   gap: 2rem;
+  animation: flowIn 4s cubic-bezier(0.33, 1, 0.68, 1);
+}
+#hero .hero__right--panel img {
+  border-radius: 8px;
+  border: 1px #402e32 solid;
+  box-shadow: 0 20px 25px -5px rgba(0, 0, 0, 0.1), 0 8px 10px -6px rgba(0, 0, 0, 0.1);
 }
 
+@keyframes flowIn {
+  from {
+    transform: translateX(45%);
+    opacity: 0;
+  }
+  to {
+    transform: translateX(0%);
+    opacity: 1;
+  }
+}
 .btn-main {
   border-radius: 4px;
   padding-inline: 1rem;

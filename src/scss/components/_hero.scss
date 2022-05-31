@@ -18,13 +18,21 @@
   }
   h1 {
     width: 100%;
-    @include md {
+    text-align: center;
+    @include sm {
+      text-align: start;
+    }
+    @include lg {
       width: 50%;
     }
   }
   p {
     width: 100%;
     padding-block: 1rem 1.5rem;
+    text-align: center;
+    @include sm {
+      text-align: start;
+    }
     @include lg {
       padding-block: 1.5rem 2rem;
       width: 50%;
@@ -44,7 +52,9 @@
     }
   }
   .hero__right--panel {
-    transform: rotate(22deg);
+    transform: translate3d(0px, 0px, 0px) scale3d(1, 1, 1) rotateX(10deg)
+      rotateY(0deg) rotateZ(22deg) skew(0deg, 0deg);
+    transform-style: preserve-3d;
     margin-top: 9rem;
     @include lg {
       position: absolute;
@@ -55,12 +65,35 @@
     @include xl {
       left: 53%;
     }
+    .first__row {
+      animation: flowIn 3s cubic-bezier(0.33, 1, 0.68, 1);
+    }
+    .second__row {
+      gap: 2rem;
+      margin-block: 3rem;
+      animation: flowIn 3.5s cubic-bezier(0.33, 1, 0.68, 1);
+    }
+    .third__row {
+      gap: 2rem;
+      animation: flowIn 4s cubic-bezier(0.33, 1, 0.68, 1);
+    }
+    img {
+      border-radius: 8px;
+      border: 1px $dark solid;
+      box-shadow: 0 20px 25px -5px rgb(0 0 0 / 0.1),
+        0 8px 10px -6px rgb(0 0 0 / 0.1);
+    }
   }
-  .second__row {
-    gap: 2rem;
-    margin-block: 3rem;
+}
+
+@keyframes flowIn {
+  from {
+    transform: translateX(45%);
+    opacity: 0;
   }
-  .third__row {
-    gap: 2rem;
+
+  to {
+    transform: translateX(0%);
+    opacity: 1;
   }
 }
